@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- app:selectable="true" -->
+
+    <item
+        android:id="@+id/menu_home"
+        android:icon="@drawable/ic_ab_home"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_home"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_jabber"
+        android:icon="@drawable/ic_chat_black_24dp"
+        android:orderInCategory="10"
+        android:title="@string/label_jabber"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_group"
+        android:icon="@drawable/ic_ab_groups"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_group"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_ess"
+        android:icon="@drawable/ic_ab_ess"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_ess"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_my_profile"
+        android:icon="@drawable/ic_action_user"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_profile"
+        tools:showAsAction="always|withText" />
+
+
+
+    <item
+        android:id="@+id/menu_contacts"
+        android:icon="@drawable/ic_ab_contacts"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_contacts"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_wmanager"
+        android:icon="@drawable/ic_ab_work_manager"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_wmanager"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_sx_settings"
+        android:icon="@drawable/ic_menu_settings"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_settings"
+        tools:showAsAction="always|withText" />
+
+    <item
+        android:id="@+id/menu_concorsi"
+        android:icon="@drawable/ic_trophy"
+        android:orderInCategory="10"
+        android:title="@string/label_menu_concorsi"
+        tools:showAsAction="always|withText" />
+
+</menu>

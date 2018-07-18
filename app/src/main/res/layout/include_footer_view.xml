@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!--TextView
+        android:id="@+id/menu_footer_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_menu_logout"
+        android:layout_marginLeft="5dp"
+    / -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#7f7f7f"
+        android:layout_marginTop="33dp"
+        android:layout_marginBottom="18dp" />
+
+    <TextView
+        android:id="@+id/menu_footer_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/label_menu_last_update"
+        style="@style/FooterStickyViewLogout" />
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/map_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/fragment_container_box">
+
+            <fragment
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/map"
+                tools:context=".MainActivity"
+
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+            <ToggleButton
+                android:id="@+id/fab_fullscreen"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textOn="@string/empty"
+                android:textOff="@string/empty"
+                android:layout_alignParentRight="true"
+                android:layout_margin="48dp"
+                android:background="@drawable/open_close_map"
+                android:visibility="gone" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/fragment_container_box"
+            android:layout_width="350dp"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/fragment_mywork_list"
+                android:name="it.acea.android.socialwfm.app.ui.fragment.inner.FragmentMyWorkList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </FrameLayout>
+
+        <!--#44f3f2f0-->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/mywork_detail_box"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardPreventCornerOverlap="true"
+            card_view:cardElevation="5dp"
+            card_view:cardUseCompatPadding="true"
+            card_view:contentPadding="@dimen/activity_horizontal_margin"
+            card_view:cardBackgroundColor="#00f3f2f0"
+            android:layout_toRightOf="@+id/fragment_container_box"
+            android:layout_margin="8dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/line_close_box"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:layout_centerHorizontal="true">
+
+                    <View
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="2dp"
+                        android:gravity="center"
+                        android:background="@color/primary_dark" />
+
+                    <com.mikepenz.iconics.view.IconicsImageView
+                        android:id="@+id/close_box"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        app:iiv_color="@color/primary_dark"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="16dp"
+                        app:iiv_icon="gmd-cancel" />
+
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/fragment_mywork_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@id/line_close_box" />
+            </RelativeLayout>
+            <include layout="@layout/include_loading_layout" android:id="@+id/progressLayout" android:visibility="gone"/>
+
+        </android.support.v7.widget.CardView>
+
+        <View
+            android:id="@+id/left_shadow_box"
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/material_drawer_shadow_right"
+            android:layout_toRightOf="@+id/fragment_container_box" />
+    </RelativeLayout>
+
+</RelativeLayout>

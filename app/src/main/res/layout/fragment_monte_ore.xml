@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:background="@drawable/background_ess">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        style="@style/FragmentHeader"
+        android:weightSum="1.0">
+
+        <Spinner
+            android:id="@+id/monte_ore_tipi_spinner"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.25"
+            android:spinnerMode="dropdown"
+            android:theme="@style/customSpinnerTheme" />
+
+        <TextView
+            android:id="@+id/monte_ore_data_select"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.185"
+            android:drawableEnd="@drawable/ic_date_picker"
+            android:drawableRight="@drawable/ic_date_picker"
+            android:paddingLeft="40dp"
+            android:text="@string/data" />
+
+        <TextView
+            android:id="@+id/monte_ore_inizio_riduzione_tv"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.162"
+            android:text="@string/inizio_riduzione" />
+
+        <TextView
+            android:id="@+id/monte_ore_fine_riduzione_tv"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.162"
+            android:text="@string/fine_riduzione" />
+
+        <TextView
+            android:id="@+id/monte_ore_pianificato"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.125"
+            android:text="@string/pianificato" />
+
+        <TextView
+            android:id="@+id/monte_ore_goduto_tv"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="0.125"
+            android:text="@string/goduto" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout">
+
+        <include
+            layout="@layout/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/monte_ore_recycler"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:alpha="@dimen/fragment_alpha"
+                android:background="@color/list_background"
+                android:scrollbars="vertical" />
+
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>

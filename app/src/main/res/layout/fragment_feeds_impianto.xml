@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/coordinatorlayout_feeds_impianto_container"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/md_grey_200">
+
+    <include
+        android:id="@+id/new_post_header"
+        layout="@layout/header_new_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/plant_feeds_header"
+        android:layout_below="@+id/new_post_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/bg_round_corner"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:gravity="center_horizontal|center_vertical"
+        >
+        <com.mikepenz.iconics.view.IconicsTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:gravity="left"
+            android:text="{faw-cog}"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:gravity="left"
+            android:text="@string/chi_e_stato_su_impianto"/>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/listContainer"
+        android:layout_below="@+id/plant_feeds_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#50ffffff">
+
+        <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+            android:id="@+id/plant_feeds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+</RelativeLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

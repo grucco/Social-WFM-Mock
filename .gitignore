@@ -1,0 +1,21 @@
+.gradle
+/local.properties
+/.idea
+.DS_Store
+/build
+/captures
+gradlew*
+*.iml
+*.db
+
+gradle
+
+##App specific configure
+app/build
+app/*.iml
+app/.DS_Store
+*.apk
+*.orig
+app/src/main/res/drawable/rect.xml
+/gradle.properties
+/projectFilesBackup

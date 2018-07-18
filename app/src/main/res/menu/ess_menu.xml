@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <item
+        android:id="@+id/menu_monte_ore"
+        android:title="@string/monte_ore"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_monte_ore" />
+
+    <item
+        android:id="@+id/menu_cartellino_orologio"
+        android:title="@string/cartellino_orologio"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cartellino" />
+
+    <item
+        android:id="@+id/menu_giustificativi"
+        android:title="@string/giustificativo"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_giustificativi" />
+    <item
+        android:id="@+id/menu_timbrature"
+        android:title="@string/timbrature"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_timbrature" />
+    <item
+        android:id="@+id/menu_quadratura"
+        android:title="@string/duadratura"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_quadratura" />
+
+    <item
+        android:id="@+id/menu_reperibilita"
+        android:title="@string/reperibilita"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_reperibilita" />
+
+    <item
+        android:id="@+id/menu_cedolino"
+        android:title="@string/cedolino"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_cud_cedolino"
+        />
+
+    <item
+        android:id="@+id/menu_overflow"
+        android:title="@string/timbrature"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_dots">
+
+        <menu>
+            <item
+                android:id="@+id/menu_aggiorna"
+                android:title="@string/aggiorna"
+                app:showAsAction="always"
+                android:icon="@drawable/ic_refresh_yellow" />
+            <item
+                android:id="@+id/menu_ordina"
+                android:title="@string/ordina"
+                app:showAsAction="always"
+                android:visible="false"
+                android:icon="@drawable/ic_arrow_desc_yellow" />
+
+            <item
+                android:id="@+id/menu_legenda"
+                android:title="@string/legenda"
+                app:showAsAction="always"
+                android:visible="false"
+                android:icon="@drawable/ic_legenda" />
+            <item
+                android:id="@+id/menu_messaggi"
+                android:title="@string/messaggi"
+                app:showAsAction="always"
+                android:visible="false"
+                android:icon="@drawable/ic_message" />
+            <item
+                android:id="@+id/menu_pdf"
+                android:title="@string/export_pdf"
+                app:showAsAction="always"
+                android:visible="false"
+                android:icon="@drawable/ic_pdf" />
+            <item
+                android:id="@+id/menu_excel"
+                android:title="@string/export_excel"
+                app:showAsAction="always"
+                android:visible="false"
+                android:icon="@drawable/ic_excel" />
+        </menu>
+    </item>
+</menu>

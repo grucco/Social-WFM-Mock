@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssRow"
+    android:weightSum="6.0">
+
+    <TextView
+        style="@style/RowField.Descrizione.IconLeft"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cartellino_data_inizio"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cartellino_data_fine"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cartellino_orario_di_lavoro_teorico"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cartellino_orare_produttive_accumulate"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_weight="1"
+        style="@style/RowField">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/cartellino_orologio_button_download_pdf"
+                android:padding="4dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_download_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+
+</LinearLayout>

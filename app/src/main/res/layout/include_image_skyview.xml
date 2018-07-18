@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <com.thbs.skycons.library.SunView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="visible"
+        app:strokeColor="@color/primary"
+        android:id="@+id/sun_view" />
+
+    <com.thbs.skycons.library.MoonView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/moon_view" />
+
+    <com.thbs.skycons.library.CloudSunView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        android:id="@+id/cloud_sun_view" />
+
+    <com.thbs.skycons.library.CloudMoonView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/cloud_moon_view" />
+
+    <com.thbs.skycons.library.CloudView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        android:id="@+id/cloud_view" />
+
+    <com.thbs.skycons.library.CloudRainView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/cloud_rain_view" />
+
+    <com.thbs.skycons.library.CloudHvRainView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/cloud_hvrain_view" />
+
+    <com.thbs.skycons.library.CloudSnowView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/cloud_snow_view" />
+
+    <com.thbs.skycons.library.WindView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/wind_view" />
+
+    <com.thbs.skycons.library.CloudFogView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/cloud_fog_view" />
+
+    <com.thbs.skycons.library.CloudThunderView
+        android:layout_width="@dimen/icon_weather_size"
+        android:layout_height="@dimen/icon_weather_size"
+        android:visibility="gone"
+        app:strokeColor="@color/primary"
+        android:id="@+id/thunder_view" />
+</RelativeLayout>

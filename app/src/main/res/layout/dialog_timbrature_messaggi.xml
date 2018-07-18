@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_ess"
+
+        android:id="@+id/relativeLayout">
+
+        <TextView
+            style="@style/DialogHeader"
+            android:text="@string/messaggi"
+            android:id="@+id/textView3"
+            android:layout_toLeftOf="@+id/close_dialog"
+            android:layout_toStartOf="@+id/close_dialog" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:src="@drawable/ic_close_dialogue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="20dp" />
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:id="@+id/timbrature_messaggi_rv"
+        android:layout_below="@+id/relativeLayout" />
+
+</RelativeLayout>

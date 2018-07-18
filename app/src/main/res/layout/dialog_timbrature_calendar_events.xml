@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/DialogHeader"
+        android:text="@string/timbrature"
+        android:id="@+id/timbrature_calendario_titolo_tv" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:scrollbars="vertical"
+        android:id="@+id/timbrature_calendario_events_rv" />
+
+</LinearLayout>

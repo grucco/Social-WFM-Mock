@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="toolbar" type="id" />
+    <item name="container" type="id" />
+
+    <item name="actual_odl_selected" type="id" />
+    <item name="e_stato_utile_a_n_persone" type="id">persone hanno ritenuto utile questo post</item>
+    <item name="menu_survey" type="id">menu_survey</item>
+</resources>

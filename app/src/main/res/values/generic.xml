@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="odl_number_label" translatable="false">
+        Odl %1s - Task %2s
+    </string>
+
+
+</resources>

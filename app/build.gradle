@@ -1,0 +1,195 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.21.2'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url "http://dl.bintray.com/populov/maven" }
+    maven { url "https://jitpack.io" }
+    mavenCentral()
+}
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion '27.0.3'
+
+    dexOptions {
+        jumboMode true
+    }
+
+    defaultConfig {
+        applicationId "it.acea.android.socialwfm"
+        minSdkVersion 19
+        targetSdkVersion 24
+        versionCode 19
+        versionName "2.0.15"
+        multiDexEnabled true
+        project.ext.set("archivesBaseName", "MockSocialWFM-" + defaultConfig.versionName+'-b'+defaultConfig.versionCode);
+
+    }
+    signingConfigs {
+
+        debug {
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+            storeFile file('../keystore/debug.keystore')
+            storePassword 'android'
+        }
+
+        release {
+            keyAlias 'reply2015'
+            keyPassword 'socialwfm'
+            storeFile file('../keystore/production_swfm.jks')
+            storePassword 'socialwfm'
+        }
+    }
+
+    buildTypes {
+        debug {
+            buildConfigField "boolean", "DROPBOX_SOURCE", "false"
+            buildConfigField "boolean", "DEV_MODE", "false"
+            resValue "string", "google_map_api_key", "AIzaSyDHu2YjerUvHfdGK8uE7ajv47ThhZrQdr4"
+            resValue "string", "application_api_key", "1b4574f54a975a6ecc22185f68bced9f74fe91a4bcd19f1325b47e8e40556ea7"
+            resValue "string", "basic_authorization", "Basic bG9yZW56by5iZXJ0aTpBY2VhMjAxNg=="
+            resValue "string", "smpAdmin_base_port", ""
+            resValue "string", "oauth.consumer.base.url", "https://jam12.sapjam.com"
+            resValue "string", "sap.user.authentication", "A41287Z"
+            resValue "string", "gadget.survey.url.root", "https://survey.aceaspa.it"
+            resValue "string", "gadget.survey.url.service", "api/v1.0/surveys"
+            resValue "string", "gadget.concorsi.url.root", "https://concorsi.aceaspa.it"
+            resValue "string", "gadget.concorsi.url.service", "concorsi/attivi"
+        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            buildConfigField "boolean", "DROPBOX_SOURCE", "false"
+            buildConfigField "boolean", "DEV_MODE", "false"
+            resValue "string", "google_map_api_key", "AIzaSyBZAmBOBqDLUli-KygrR1yEBhNm8MQlOYs"
+            resValue "string", "application_api_key", "1b4574f54a975a6ecc22185f68bced9f74fe91a4bcd19f1325b47e8e40556ea7"
+            resValue "string", "basic_authorization", "Basic bG9yZW56by5iZXJ0aTpBY2VhMjAxNg=="
+            resValue "string", "smpAdmin_base_port", ""
+            resValue "string", "oauth.consumer.base.url", "https://jam12.sapjam.com"
+            resValue "string", "sap.user.authentication", "A41287Z"
+            resValue "string", "gadget.survey.url.root", "https://survey.aceaspa.it"
+            resValue "string", "gadget.survey.url.service", "api/v1.0/surveys"
+            resValue "string", "gadget.concorsi.url.root", "https://concorsi.aceaspa.it"
+            resValue "string", "gadget.concorsi.url.service", "concorsi/attivi"
+            debuggable true
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+    packagingOptions {
+        exclude 'META-INF/services/javax.annotation.processing.Processor'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    dexOptions {
+        jumboMode = true
+        javaMaxHeapSize "4g"
+    }
+
+}
+
+dependencies {
+
+    //compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //Google
+    compile 'com.android.support:appcompat-v7:24.2.0'
+    compile 'com.android.support:cardview-v7:24.2.0'
+    compile 'com.android.support:recyclerview-v7:24.2.0'
+    compile 'com.android.support:design:24.2.0'
+    compile 'com.google.android.gms:play-services-base:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-maps:8.4.0'
+    compile 'com.google.maps.android:android-maps-utils:0.4'
+    compile 'com.google.code.gson:gson:2.4'
+    //Other
+    compile 'com.jakewharton.picasso:picasso2-okhttp3-downloader:1.0.2'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+    //compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile 'org.fingerlinks.mobile.android:Navigator:0.1.0'
+    compile 'com.github.bumptech.glide:glide:3.6.1'
+    compile 'com.koushikdutta.ion:ion:2.1.6'
+    compile 'com.melnykov:floatingactionbutton:1.3.0'
+
+    compile 'io.realm:realm-android:0.82.2'
+    //aggiunto da me
+    annotationProcessor 'io.realm:realm-android:0.82.2'
+
+    compile 'com.pnikosis:materialish-progress:1.7'
+    compile "com.mikepenz:iconics-core:2.8.1@aar"
+    compile 'com.mikepenz:google-material-typeface:1.2.0.1@aar'
+    compile 'com.mikepenz:typeicons-typeface:2.0.7.2@aar'
+    compile 'com.mikepenz:fontawesome-typeface:4.6.0.3@aar'
+    compile 'com.mikepenz:material-design-iconic-typeface:2.2.0.2@aar'
+    compile('com.mikepenz:materialdrawer:4.6.1@aar') { transitive = true }
+    compile('com.github.afollestad.material-dialogs:core:0.8.5.3@aar') { transitive = true }
+
+    compile 'com.jakewharton:butterknife:7.0.1'
+    //aggiunto da me
+    annotationProcessor 'com.jakewharton:butterknife:7.0.1'
+
+    compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
+    compile 'org.jsoup:jsoup:1.8.2'
+    compile 'com.amulyakhare:com.amulyakhare.textdrawable:1.0.1'
+    compile 'com.github.d-max:static-map:0.1.3@aar'
+    compile 'joda-time:joda-time:2.9'
+    compile 'com.jenzz:materialpreference:1.3'
+    compile 'com.github.johnhiott:DarkSkyApi:v0.1.4'
+    compile 'com.turingtechnologies.materialscrollbar:lib:5.0.1'
+    compile('com.mikepenz:aboutlibraries:5.3.4@aar') { transitive = true }
+    compile 'com.mikepenz:actionitembadge:3.2.1@aar'
+    compile 'com.nineoldandroids:library:2.4.0'
+    compile 'com.daimajia.easing:library:1.0.1@aar'
+    compile 'com.daimajia.androidanimations:library:1.1.3@aar'
+    compile 'com.yqritc:recyclerview-flexibledivider:1.2.9'
+    compile 'com.squareup.okhttp3:okhttp:3.4.2'
+
+    //Crashlytics
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') { transitive = true; }
+    compile 'com.android.support:multidex:1.0.1'
+    compile 'com.github.chrisbanes.photoview:library:1.2.4'
+    compile 'me.henrytao:recyclerview:1.3.0'
+    //JobSchedule
+    compile 'com.evernote:android-job:1.0.2'
+    compile 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+    compile 'com.github.greenfrvr:hashtag-view:1.2.0'
+    compile 'it.sephiroth.android.library.horizontallistview:hlistview:1.2.2'
+    compile 'com.github.xiprox.errorview:library:2.2.0'
+
+    //FilePicker
+    compile 'com.nononsenseapps:filepicker:2.5.2'
+
+    compile 'com.github.clans:fab:1.6.3'
+
+    compile 'com.code-troopers.betterpickers:library:2.5.1'
+
+    compile 'com.github.alamkanak:android-week-view:1.2.6'
+    compile 'org.greenrobot:eventbus:3.0.0'
+
+    /*TODO: il repo ufficiale della libreria MaterialIntroView e' quello di iammert, ho dovuto
+    * apportare una modifica
+    * quindi ho effettuato il fork del progetto e creato una nuova versione.
+    * La modifica e' gia' in pull request sul repo ufficiale (fork di PierfrancescoSoffritti),
+    * quando sarà accettata la pull request si potra' usare la versione ufficiale
+    * */
+    //compile 'com.github.iammert:MaterialIntroView:1.5.2'
+    compile 'com.github.ilfuriano:MaterialIntroView:1.5.3b'
+
+}

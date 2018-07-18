@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/coordinatorlayout_gruppo_membri"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    >
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="8dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:id="@+id/num_members"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="3"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="25dp"
+                    android:background="@color/secondary_text" />
+
+                <ImageView
+                    android:id="@+id/add_member"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/ic_social_add_mention_post" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            card_view:cardCornerRadius="0dp"
+            card_view:cardElevation="2dp"
+            card_view:cardPreventCornerOverlap="false"
+            card_view:cardUseCompatPadding="false">
+
+            <org.fingerlinks.mobile.android.utils.widget.NoScrollListView
+                android:id="@+id/list_members"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="25dp" />
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:alpha="0.5"
+                android:background="@color/white"
+                android:clickable="true"
+                wheel:matProg_barColor="@color/accent"
+                wheel:matProg_progressIndeterminate="true" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

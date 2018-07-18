@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tr.xip.errorview.ErrorView xmlns:errorview="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/empty_view"
+    errorview:ev_errorImage="@drawable/no_data"
+    errorview:ev_title="@string/non_ci_sono_dati"
+    errorview:ev_showRetryButton="false"
+    android:visibility="gone"
+    android:background="@color/md_grey_50" />

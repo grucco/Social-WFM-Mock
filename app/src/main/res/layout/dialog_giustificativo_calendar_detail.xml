@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        style="@style/DialogHeader"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/giustificativo"
+            android:id="@+id/textView2"
+            android:textStyle="bold"
+            android:gravity="center_vertical"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/giustificativo_detail_stato_tv"
+            android:gravity="start"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:paddingLeft="20dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toLeftOf="@+id/close_dialog"
+            android:layout_toStartOf="@+id/close_dialog" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:src="@drawable/ic_close_dialogue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/dialog_padding">
+
+        <TextView
+            style="@style/GiustificativiItem.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/giustificativo_calendar_detail_tipo_tv" />
+
+        <TextView
+            style="@style/GiustificativiItem.Label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/giustificativo_calendar_detail_data_tv" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/scrollView">
+
+            <TextView
+                style="@style/GiustificativiItem.Field"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/giustificativo_calendar_detail_note_tv"
+                android:inputType="textMultiLine" />
+        </ScrollView>
+    </LinearLayout>
+
+</LinearLayout>

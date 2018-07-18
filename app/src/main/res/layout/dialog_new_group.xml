@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fab="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@color/primary">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/background" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/gradient_general_bg" />
+
+        <EditText
+            android:id="@+id/name"
+            android:hint="@string/nome_del_gruppo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="180dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:paddingRight="16dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/md_grey_400"
+            android:textSize="@dimen/font_size_24_sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/overview"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_below="@+id/header"
+        android:background="#789ec4"
+        android:gravity="center_vertical"
+        android:paddingLeft="75dp"
+        android:text="Overview"
+        android:textAllCaps="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_size_16_sp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:gravity="top"
+        android:hint="@string/new_group_descrizione"
+        android:padding="4dp"
+        android:layout_below="@+id/overview"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:minHeight="108dp" />
+
+    <com.melnykov.fab.FloatingActionButton
+        android:id="@+id/save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/overview"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="-28dp"
+        android:src="@drawable/ic_action_content_save"
+        fab:fab_colorNormal="@color/primary_dark" />
+
+
+</RelativeLayout>

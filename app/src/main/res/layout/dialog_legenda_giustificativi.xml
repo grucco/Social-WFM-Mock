@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_festivo" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_festivo" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_inviato" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_inviato" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_assenza" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_assente" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_canc_richiesto" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_canc_richiesto" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical"
+        >
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_giorno_non_lavorativo" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_giorno_non_lavorativo" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="vertical">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_piu_inserimenti" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_piu_inserimenti" />
+    </LinearLayout>
+
+</LinearLayout>

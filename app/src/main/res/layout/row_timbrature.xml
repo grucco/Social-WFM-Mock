@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssRow"
+    android:weightSum="1.0">
+
+    <View
+        style="@style/RowField"
+        android:layout_weight="@dimen/timbrature_col_data_placeholder_weight" />
+
+    <TextView
+        style="@style/RowField"
+        android:id="@+id/row_timbrature_data_tv"
+        android:layout_weight="@dimen/timbrature_col_data_weight" />
+
+    <LinearLayout
+        style="@style/RowField"
+        android:orientation="vertical"
+        android:layout_weight="@dimen/timbrature_col_pianificato_weight">
+
+        <TextView
+            style="@style/RowField"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:id="@+id/row_timbrature_pianificato_tv" />
+
+        <TextView
+            android:id="@+id/row_timbrature_pianificato_color"
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/RowField"
+        android:id="@+id/row_timbrature_ora_tv"
+        android:layout_weight="@dimen/timbrature_col_ora_weight" />
+
+    <TextView
+        style="@style/RowField"
+        android:id="@+id/row_timbrature_appunto_tv"
+        android:layout_weight="@dimen/timbrature_col_appunto_weight"
+        android:ellipsize="end"
+        android:maxLines="1" />
+
+    <TextView
+        style="@style/RowField"
+        android:id="@+id/row_timbrature_stato_tv"
+        android:layout_weight="@dimen/timbrature_col_stato_weight" />
+
+    <LinearLayout
+        style="@style/RowField"
+        android:layout_gravity="center"
+        android:layout_weight="@dimen/timbrature_col_action_weight">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="10dp"
+            android:id="@+id/row_timbrature_action_bt"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:src="@drawable/ic_play_detail" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</LinearLayout>

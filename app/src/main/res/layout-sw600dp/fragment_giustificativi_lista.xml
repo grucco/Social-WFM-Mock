@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/EssContainer"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/accent"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date_picker"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:paddingTop="8dp"
+            tools:text="12/03/1984"
+            android:paddingBottom="8dp"
+            android:paddingLeft="4dp"
+            android:drawablePadding="0dp"
+            android:paddingRight="18dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:drawableEnd="@drawable/ic_date_picker"
+            android:drawableRight="@drawable/ic_date_picker" />
+
+        <TextView
+            android:id="@+id/start_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Data inizio"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/end_date"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Data fine"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Status"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/ore"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Ore assenza"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/goduto"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="Goduto"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/action"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/add"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:src="@drawable/ic_add" />
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ListView
+                android:id="@+id/list_giustificativi"
+                style="@style/ListAlpha"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+        <tr.xip.errorview.ErrorView
+            android:id="@+id/error_view"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.90"
+            android:clickable="true"
+            android:background="@color/md_grey_50"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

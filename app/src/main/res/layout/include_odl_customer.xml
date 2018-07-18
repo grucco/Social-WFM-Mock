@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/HomepageCard">
+
+        <LinearLayout
+            android:id="@+id/click_cliente"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="#ffffff"
+            android:gravity="center"
+            android:padding="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="left|center_vertical">
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:text="{faw-user}"
+                    android:textColor="@color/md_grey_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="20sp"
+                    android:layout_marginRight="10dp"/>
+
+                <TextView
+                    android:id="@+id/odl_customer_info"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="left|center_vertical"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    style="@style/OdlPlantLabelBold" />
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:text="{faw-chevron-right}"
+                    android:textColor="@color/md_grey_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="15sp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/odl_customer_payment"
+                        style="@style/OdlPlantLabel" />
+
+                    <com.mikepenz.iconics.view.IconicsTextView
+                        android:id="@+id/odl_customer_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="4dp"
+                        android:paddingRight="4dp"
+                        android:layout_marginLeft="32dp"
+                        android:gravity="center_vertical"
+                        style="@style/OdlPlantLabelBold"
+                        android:lines="1"
+                        android:maxLines="1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/odl_customer_terms"
+                        style="@style/OdlPlantLabel" />
+
+                    <TextView
+                        android:id="@+id/odl_customer_terms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="32dp"
+                        android:gravity="center_vertical"
+                        style="@style/OdlPlantLabelBold" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/odl_pant_attachment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:drawableRight="@drawable/ic_work_attachment"
+                android:drawablePadding="5dp"
+                style="@style/OdlPlantLabelBoldAttachment"
+                android:textSize="@dimen/font_size_20_sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+        <include layout="@layout/include_empty_layout_mini" />
+</android.support.v7.widget.CardView>

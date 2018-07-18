@@ -1,0 +1,542 @@
+<resources>
+
+    <style name="ToolbarTextLabel">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_13_sp</item>
+    </style>
+
+    <style name="FooterStickyViewLogout">
+        <item name="android:textColor">@color/divider</item>
+        <item name="android:textSize">@dimen/font_size_15_sp</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="EmptyTextView">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_30_sp</item>
+    </style>
+
+    <style name="OdlNumberLabel">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_20_sp</item>
+    </style>
+
+    <style name="OdlTitleLabel" parent="@style/OdlNumberLabel">
+        <item name="android:textSize">@dimen/font_size_15_sp</item>
+    </style>
+
+    <style name="OdlSubtitleLabel" parent="@style/OdlNumberLabel">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textStyle">italic</item>
+        <item name="android:lines">2</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/font_size_12_sp</item>
+    </style>
+
+    <style name="OdlPlantLabelBold">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:lines">2</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:textSize">@dimen/font_size_14_sp</item>
+    </style>
+
+    <style name="OdlPlantLabelBoldAttachment" parent="@style/OdlPlantLabelBold">
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textSize">@dimen/font_size_18_sp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+
+    <style name="OdlPlantLabel">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:lines">1</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">left|center_vertical</item>
+        <item name="android:textSize">@dimen/font_size_12_sp</item>
+    </style>
+
+    <style name="HomepageCard" parent="CardView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="cardCornerRadius">1dp</item>
+        <item name="cardPreventCornerOverlap">true</item>
+        <item name="cardElevation">5dp</item>
+        <item name="cardUseCompatPadding">true</item>
+    </style>
+
+    <style name="HomepageCardLinkToEntity">
+
+    </style>
+
+    <style name="MarkerStyleTextLabel">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_07_sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="WeatherTemp">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/font_size_16_sp</item>
+    </style>
+
+    <style name="WeatherCondLabel">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textSize">@dimen/font_size_14_sp</item>
+        <item name="android:layout_marginTop">2dp</item>
+    </style>
+
+    <style name="memberNameLabel">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textSize">@dimen/font_size_18_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginLeft">8dp</item>
+    </style>
+
+    <style name="memberTypeLabel">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/font_size_18_sp</item>
+        <!--item name="android:textStyle">bold</item -->
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:layout_marginBottom">4dp</item>
+    </style>
+
+    <style name="Dialog.Fullscreen" parent="Theme.AppCompat.Dialog">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="Dialog.Custom" parent="Theme.AppCompat.Dialog">
+        <item name="android:padding">0dp</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorAccent">@color/accent</item>
+        <item name="windowActionModeOverlay">true</item>
+    </style>
+
+    <style name="TextSplashLabel">
+        <item name="android:textSize">@dimen/font_size_60_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">15dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="EmptyTextLabel">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">@dimen/font_size_20_sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:text">@string/empty_label</item>
+    </style>
+
+    <style name="PlantTechinicalLabel">
+        <item name="android:textColor">@color/divider</item>
+        <item name="android:textSize">@dimen/font_size_10_sp</item>
+        <item name="android:lines">2</item>
+        <item name="android:gravity">top|center</item>
+        <item name="android:ellipsize">end</item>
+
+    </style>
+
+    <style name="ProgressLabel">
+        <item name="android:textColor">@color/icons</item>
+        <item name="android:textSize">@dimen/font_size_18_sp</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <!-- You can also inherit from NNF_BaseTheme.Light -->
+    <style name="FilePickerTheme" parent="NNF_BaseTheme">
+        <!-- Set these to match your theme -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+
+        <!-- Need to set this also to style create folder dialog -->
+        <item name="alertDialogTheme">@style/FilePickerAlertDialogTheme</item>
+
+        <!-- If you want to set a specific toolbar theme, do it here -->
+        <!-- <item name="nnf_toolbarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item> -->
+    </style>
+
+    <style name="FilePickerAlertDialogTheme" parent="Theme.AppCompat.Dialog.Alert">
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="FabMenuTheme">
+
+    </style>
+
+    <style name="FabMenuTheme.Button">
+        <item name="fab_colorNormal">@color/accent</item>
+        <item name="fab_size">mini</item>
+    </style>
+
+    <style name="FabMenuTheme.Menu">
+        <item name="menu_colorNormal">@color/accent</item>
+        <item name="menu_fab_size">normal</item>
+    </style>
+
+    <style name="EssContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:paddingLeft">@dimen/container_padding</item>
+        <item name="android:paddingRight">@dimen/container_padding</item>
+        <item name="android:paddingTop">@dimen/container_padding</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="FragmentHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/fragment_header_height</item>
+        <item name="android:background">@color/accent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+
+    <style name="FragmentHeaderField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="FragmentHeaderField.DatePicker">
+        <item name="android:drawableEnd">@drawable/ic_date_picker</item>
+        <item name="android:drawableRight">@drawable/ic_date_picker</item>
+        <item name="android:paddingLeft">40dp</item>
+    </style>
+
+    <style name="FragmentHeaderField.Big">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="EssRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/ess_row_height</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="RowField">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <style name="RowField.Descrizione">
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="RowField.Descrizione.IconLeft">
+        <item name="android:paddingLeft">@dimen/container_padding</item>
+        <item name="android:drawableLeft">@drawable/ic_pdf_file_icon</item>
+    </style>
+
+    <style name="RowField.Descrizione.GravityLeft">
+        <item name="android:gravity">center_vertical|left</item>
+        <item name="android:paddingLeft">@dimen/container_padding</item>
+    </style>
+
+
+    <!--@START-CARTELLINO OROLOGIO-->
+    <style name="CartellinoOrologioHeader">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/fragment_header_height</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CartellinoOrologioHeader.marginLeft">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <style name="CartellinoOrologioHeader.Big">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="CartellinoOrologioHeader.Big.Black">
+        <item name="android:textColor">@color/md_black_1000</item>
+        <item name="android:padding">15dp</item>
+    </style>
+
+    <style name="CartellinoOrologioRow">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">@dimen/row_monte_ore_height</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="CartellinoOrologioRow.Descrizione">
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="CartellinoOrologioRow.Descrizione.MarginLeft">
+        <item name="android:layout_marginLeft">20dp</item>
+    </style>
+
+    <!--@END-CARTELLINO OROLOGIO-->
+
+    <style name="MyCustomBetterPickerTheme">
+        <item name="bpMainColor1">#ffffff</item><!--Sfondo del quadratone a sinistra-->
+        <item name="bpMainColor2">#ffffff</item><!--Sfondo della griglia e footer-->
+        <item name="bpAccentColor">@color/primary_ess
+        </item><!--Colore giorno selezionato (scritta grande, scritta del cerchio, testo pulsanti)-->
+        <item name="bpMainTextColor">@color/primary_ess</item><!--Anno nel quadratone-->
+        <item name="bpDoneTextColor">#393e3a</item><!--Testo delle date nella griglia-->
+        <item name="bpLineColor">@color/primary_ess</item><!--Header (giorno letterale)-->
+        <item name="bpDoneBackgroundColor">#07e7c2</item><!---->
+        <item name="bpSelectionAlpha">102</item><!---->
+    </style>
+
+    <style name="MyCustomNumberPickerTheme">
+        <item name="bpDialogBackground">@drawable/dialog_full_holo_light</item>
+        <item name="bpTitleColor">@color/primary_ess</item>
+        <item name="bpTextColor">@color/primary_ess</item>
+        <item name="bpDeleteIcon">@drawable/ic_back_space</item>
+        <item name="bpCheckIcon">@drawable/ic_check_light</item>
+        <item name="bpKeyBackground">@drawable/key_background_light</item>
+        <item name="bpButtonBackground">@drawable/button_background_light</item>
+        <item name="bpTitleDividerColor">@color/primary_ess</item>
+        <item name="bpDividerColor">@color/primary_ess</item>
+        <!--item name="bpKeyboardIndicatorColor">@color/bpTransparent</item-->
+    </style>
+
+    <style name="customSpinnerTheme" parent="AppTheme">
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+    </style>
+
+    <style name="LegendaRowGiustificativi">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="LegendaGiustificativiLabel">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">left</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+    </style>
+
+    <style name="LegendaGiustificativiColor">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="LegendaTheme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/legenda_row_height</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="LegendaTheme.Color">
+        <item name="android:layout_width">15dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_gravity">right|center_vertical</item>
+        <item name="android:layout_margin">30dp</item>
+    </style>
+
+    <style name="LegendaTheme.Label">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_gravity">left|center_vertical</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:gravity">left|center_vertical</item>
+    </style>
+
+    <style name="GiustificativiItem">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:padding">5dp</item>
+    </style>
+
+    <style name="GiustificativiItem.Label">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="GiustificativiItem.Field"></style>
+
+    <style name="DettaglioItem">
+        <item name="android:padding">3dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">match_parent</item>
+
+    </style>
+
+    <style name="DettaglioItem.Label">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="DettaglioItem.Field">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:gravity">center</item>
+    </style>
+
+    <style name="ReperibilitaItem.Label" parent="DettaglioItem.Label">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">center</item>
+
+    </style>
+
+    <style name="ReperibilitaItem.Field" parent="DettaglioItem.Field">
+        <item name="android:layout_width">0dp</item>
+    </style>
+
+    <style name="TimbraturaMessaggioField">
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:gravity">center_vertical</item>
+    </style>
+
+    <style name="DialogHeader">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/dialog_header_height</item>
+        <item name="android:background">@color/primary_ess</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:padding">@dimen/dialog_padding</item>
+    </style>
+
+    <!-- Start CalendarView Style -->
+
+    <style name="MonthTitle">
+        <item name="android:textSize">@dimen/roboto_calendar_date_title_font</item>
+        <item name="android:textColor">@color/roboto_calendar_date_title</item>
+    </style>
+
+    <style name="DayOfTheWeek">
+        <item name="android:textSize">@dimen/roboto_calendar_day_of_week_font</item>
+        <item name="android:textColor">@color/roboto_calendar_day_of_month</item>
+    </style>
+
+    <style name="DayOfTheMonth">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/secondary_text</item>
+    </style>
+
+    <!-- End CalendarView Style -->
+
+    <style name="ListAlpha">
+        <item name="android:alpha">@dimen/fragment_alpha</item>
+    </style>
+
+    <style name="Calendario">
+        <item name="android:layout_width">250dp</item>
+        <item name="android:layout_height">350dp</item>
+        <item name="android:layout_marginRight">@dimen/calendar_margin</item>
+        <item name="android:layout_marginLeft">@dimen/calendar_margin</item>
+    </style>
+
+    <dimen name="list_header_margin_left">30dp</dimen>
+    <dimen name="list_header_padding_right">30dp</dimen>
+    <dimen name="list_header_padding_top">30dp</dimen>
+    <dimen name="container_padding">26dp</dimen>
+    <dimen name="ess_row_height">80dp</dimen>
+    <dimen name="left_icon_padding">20dp</dimen>
+
+    <style name="ProfiloPersonale">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">2dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:layout_marginLeft">25dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="contentPadding">25dp</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="cardPreventCornerOverlap">false</item>
+        <item name="cardUseCompatPadding">false</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="ProfiloPersonaleField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="ProfiloPersonaleField.Divider">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+        <item name="android:background">@color/md_grey_300</item>
+    </style>
+
+    <style name="ProfiloPersonaleField.Container">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:paddingLeft">2dp</item>
+        <item name="android:paddingRight">2dp</item>
+    </style>
+
+    <style name="ProfiloPersonaleField.Header">
+        <item name="android:layout_marginLeft">33dp</item>
+        <item name="android:layout_marginRight">25dp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ProfiloPersonaleField.Label">
+        <item name="android:inputType">textCapSentences</item>
+        <item name="android:capitalize">sentences</item>
+    </style>
+
+    <style name="ProfiloPersonaleField.Value">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Theme.SocialWFM.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.SocialWFM.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

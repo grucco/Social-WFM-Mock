@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="action_descrizione">Ogni schermata della sezione ESS ha un proprio menu di azioni. Attraverso questo menu potrai:</string>
+    <string name="aggiorna_intro">Aggiornare i dati visualizzati</string>
+    <string name="aggiorna_intro_descrizione"> effettua il refresh dei dati</string>
+    <string name="ordina_intro">Ordinare i dati visualizzati</string>
+    <string name="ordina_intro_descrizione">effettua l\'ordinamento della lista secondo alcuni criteri</string>
+    <string name="seleziona_tipo">Clicca questo bottone per filtrare in base ad un tipo specifico</string>
+    <string name="seleziona_data">Clicca questo bottone per scegliere la data con cui filtrare i dati</string>
+    <string name="esporta_pdf_reperibilità_intro">Esporta PDF</string>
+    <string name="esporta_pdf__reperibilità_intro_descrizione">Effettua il download di un file pdf contenente le informazioni di reperibilità per il periodo selezionato</string>
+    <string name="esporta_excel_reperibilità_intro">Esporta EXCEL</string>
+    <string name="esporta_excel__reperibilità_intro_descrizione">Effettua il download di un file excel contenente le informazioni di reperibilità per il periodo selezionato</string>
+    <string name="prova"><![CDATA[<b>Ciao</b>]]></string>
+</resources>

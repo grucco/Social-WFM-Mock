@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
+
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/sector_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_sector_profile"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:id="@+id/mobile_profile"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic_location_profile"
+                    android:drawablePadding="8dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/secondary_text"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/secondary_text" />
+
+                <View
+                    android:layout_width="16dp"
+                    android:layout_height="match_parent" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/secondary_text" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Manager di riferimento"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/font_size_12_sp" />
+
+            <TextView
+                android:id="@+id/manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Subordinati"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/font_size_12_sp" />
+
+            <TextView
+                android:id="@+id/subordinati"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Assistenti"
+                android:textColor="@color/secondary_text"
+                android:textSize="@dimen/font_size_12_sp" />
+
+            <TextView
+                android:id="@+id/assistenti"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="32dp"
+                android:textColor="@color/primary_text"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

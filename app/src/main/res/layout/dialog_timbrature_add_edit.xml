@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+
+    <RelativeLayout
+        style="@style/DialogHeader"
+        android:orientation="horizontal"
+        android:gravity="start"
+        android:id="@+id/relativeLayout2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            tools:text="Nuova timbratura"
+            android:id="@+id/timbrature_dialog_title"
+            android:gravity="center_vertical"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:src="@drawable/ic_close_dialogue"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/dialog_padding"
+            tools:showIn="@layout/dialog_timbrature_detail">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:layout_width="wrap_content"
+                        android:text="@string/registrazione_tempi"
+                        android:id="@+id/textView13" />
+
+                    <Spinner
+                        style="@style/DettaglioItem.Field"
+                        android:id="@+id/timbratura_tipi_spinner" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.25">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:text="@string/data"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:drawableRight="@drawable/ic_date_picker_grey"
+                        android:drawablePadding="15dp"
+                        android:id="@+id/timbrature_detail_data_label" />
+
+                    <TextView
+                        style="@style/DettaglioItem.Field"
+                        tools:text="01/01/1990"
+                        android:id="@+id/timbrature_detail_data_tv" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.25"
+                    android:id="@+id/timbrature_detail_ora_container">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/ora"
+                        android:drawableRight="@drawable/ic_work_clock"
+                        android:drawablePadding="15dp"
+                        android:id="@+id/timbrature_detail_ora_label" />
+
+                    <TextView
+                        style="@style/DettaglioItem.Field"
+                        tools:text="12:00:00"
+                        android:id="@+id/timbrature_detail_ora_tv" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0"
+                android:baselineAligned="false">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/timbrature_detail_motivo_container"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:text="@string/motivo"
+                        android:id="@+id/textView10" />
+
+                    <Spinner
+                        style="@style/DettaglioItem.Field"
+                        tools:text="Motivo 1"
+                        android:id="@+id/timbrature_detail_motivo_sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    android:id="@+id/timbrature_detail_responsabile_container">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:layout_width="wrap_content"
+                        android:text="@string/responsabile_approvazione"
+                        android:id="@+id/textView5" />
+
+                    <TextView
+                        style="@style/DettaglioItem.Field"
+                        android:layout_width="match_parent"
+                        tools:text="Mario Rossi"
+                        android:id="@+id/timbrature_detail_approvatore_tv" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1.0">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/timbrature_detail_societa_container"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:text="@string/societa"
+                        android:id="@+id/textView9" />
+
+                    <EditText
+                        style="@style/DettaglioItem.Field"
+                        tools:text="My Company"
+                        android:id="@+id/timbrature_detail_societa_et"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="0dp"
+                    android:layout_height="70dp"
+                    android:id="@+id/timbrature_detail_cdc_container"
+                    android:layout_weight="0.5">
+
+                    <TextView
+                        style="@style/DettaglioItem.Label"
+                        android:text="@string/centro_di_costo"
+                        android:id="@+id/textView11"
+                        android:layout_height="wrap_content" />
+
+                    <EditText
+                        style="@style/DettaglioItem.Field"
+                        tools:text="CDC1"
+                        android:id="@+id/timbrature_detail_cdc_tv"
+                        android:layout_height="match_parent" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/scrollView"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/DettaglioItem.Label"
+                    android:layout_width="wrap_content"
+                    android:text="@string/note"
+                    android:id="@+id/textView12" />
+
+                <EditText
+                    style="@style/DettaglioItem.Field"
+                    android:minHeight="40dp"
+                    android:id="@+id/timbrature_detail_appunto_tv"
+                    android:gravity="start"
+                    android:inputType="textMultiLine" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/mask_edit"
+            android:alpha="0.2"
+            android:clickable="true"
+            android:visibility="gone"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:background="@android:color/darker_gray">
+
+        </View>
+    </FrameLayout>
+
+</LinearLayout>

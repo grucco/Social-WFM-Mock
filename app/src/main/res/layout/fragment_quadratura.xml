@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:background="@drawable/background_ess"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/quadratura_header"
+        style="@style/FragmentHeader"
+        android:weightSum="6.0">
+
+        <TextView
+            android:id="@+id/quadratura_tipo_tv"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1"
+            android:text="@string/quadratura_tipo" />
+
+        <TextView
+            android:id="@+id/quadratura_data_select"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1"
+            android:drawableEnd="@drawable/ic_date_picker"
+            android:drawableRight="@drawable/ic_date_picker"
+            android:text="@string/periodo" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1"
+            android:text="@string/quadratura_messaggio" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1"
+            android:text="@string/quadratura_cid" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1"
+            android:text="@string/quadratura_nome_dipendente" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:id="@+id/quadratura_data_inserimento"
+            android:text="@string/quadratura_nome_data"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/quadratura_header">
+
+        <include
+            layout="@layout/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/quadratura_recycler"
+                android:alpha="@dimen/fragment_alpha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/list_background"
+                android:scrollbars="vertical" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </FrameLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>

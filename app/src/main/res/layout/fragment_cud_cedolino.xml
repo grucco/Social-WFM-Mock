@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:background="@drawable/background_ess"
+    android:layout_width="wrap_content">
+
+    <LinearLayout
+        style="@style/FragmentHeader"
+        android:id="@+id/cud_cedolino_header"
+        android:weightSum="4">
+        <Spinner
+            android:id="@+id/cud_cedolino_tipi_spinner"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="2.0"
+            android:spinnerMode="dropdown"
+            android:theme="@style/customSpinnerTheme" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:text="@string/mese"
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:id="@+id/cud_cedolino_data_select"
+            style="@style/FragmentHeaderField.DatePicker"
+            android:paddingRight="75dp"
+            android:paddingLeft="150dp"
+            android:gravity="start|center_vertical"
+            android:layout_weight="1"
+            android:text="@string/anno" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cud_cedolino_header">
+
+        <include
+            layout="@layout/empty_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh_layout">
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/cud_cedolino_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:background="@color/list_background"
+                android:alpha="@dimen/fragment_alpha" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>

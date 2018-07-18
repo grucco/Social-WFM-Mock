@@ -1,0 +1,498 @@
+<resources>
+
+
+    <!--ENV CONFIGURATION-->
+
+    <string name="preproduzione.oauth.consumer.key">EU7lu14bnWGqnJTbh8Sq</string>
+    <string name="preproduzione.oauth.consumer.secret">IvnvPVeZCWOJ3qBS03GYMubjrNJ77XPp3o72IAKU</string>
+    <string name="preproduzione.oauth.jam.login.url">https://jam12.sapjam.com/auth/status?companyId=aceaspaT1&amp;idp=hcm12preview.sapsf.eu</string>
+    <string name="preproduzione.smp.url">swfmmobilepp.aceaspa.it</string>
+    <string name="preproduzione">PREPRODUZIONE</string>
+
+    <string name="produzione.oauth.consumer.key">rZTdavOulKbYb8eNvFeL</string>
+    <string name="produzione.oauth.consumer.secret">qGVVMuvLPzdHJPEaX0aics9nASDglpL20uOfWjzY</string>
+    <string name="produzione.oauth.jam.login.url">https://jam12.sapjam.com/auth/status?companyId=aceaspaP&amp;idp=performancemanager5.successfactors.eu</string>
+    <string name="produzione.smp.url">swfmmobile.aceaspa.it</string>
+    <string name="produzione">PRODUZIONE</string>
+
+    <!--@end ENV CONFIGURATION-->
+
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nec odio viverra lectus consequat sollicitudin at ac tellus. Integer id condimentum eros. Vivamus congue luctus leo, a pulvinar sem eleifend sed. Curabitur eu tortor mi. Suspendisse dignissim purus at libero cursus iaculis. Mauris vulputate a libero ut vestibulum. Sed turpis augue, imperdiet ac eleifend non, feugiat id tellus.</string>
+    <string name="app_confirm_exit">Premere ancora per uscire</string>
+    <string name="loading">Caricamento in corso. \nAttendere prego</string>
+
+    <!-- item menu -->
+    <string name="label_menu_home">Home</string>
+    <string name="label_menu_group">Gruppi</string>
+    <string name="label_menu_ess">Ess</string>
+    <string name="label_menu_wmanager">Work Manager</string>
+    <string name="label_menu_contacts">Contatti</string>
+    <string name="label_menu_profile">Il mio profilo</string>
+
+    <string name="label_menu_settings">Preferenze</string>
+    <string name="label_menu_search">Cerca</string>
+    <string name="label_menu_notify">Notifiche del sistema</string>
+    <string name="label_menu_inbox">Messaggi privati</string>
+    <string name="label_menu_chat">Chat</string>
+
+    <string name="operation_not_active">Funzionalita\' non attiva!</string>
+
+    <string name="label_menu_logout">Esci</string>
+    <string name="label_menu_last_update">Ultimo aggiornamento effettuato \n%1$s</string>
+
+    <string name="tab_mywork">Il mio lavoro</string>
+    <string name="tab_update">aggiornamenti</string>
+
+    <string name="mywork_plant_user_type">Ruolo Utenza</string>
+    <string name="mywork_plant_location">Ubicazione</string>
+
+    <string name="mywork_customer_id">Cliente: %1s</string>
+
+    <string name="odl_customer_payment">Quadro amm.</string>
+    <string name="odl_customer_terms">Esigenze Speciali</string>
+
+    <!-- Preference -->
+    <string name="action_settings">Preferenze</string>
+
+    <string name="pref_header_general">Generali</string>
+    <string name="pref_title_logout">Esci dall\'applicazione</string>
+    <string name="pref_description_logout">
+        Effettuando il logout tutti i dati utente verranno cancellati dal dispositivo.
+        \nPuoi recuperarli rieffettuando la procedura di accesso.
+    </string>
+    <string name="pref_title_privacy">Privacy</string>
+    <string name="pref_description_privacy">
+        Informazioni al consenso ed al trattamento dei dati personali da parte Acea
+        sotto e per gli effetti degli articoli della legge.
+    </string>
+
+    <!--string name="pref_title_faq">F.A.Q. e Contatti</string>
+    <string name="pref_description_faq">
+        You have doubts and / or questions about the operation, check our F.A.Q. or contact us through the specific form.
+    </string -->
+
+    <string name="preference_logout_popup_title">Attenzione!</string>
+
+    <string name="preference_logout_popup_message">
+        <![CDATA[
+        Siete sicuri di effettuare il logout dall\'applicazione? Tutti i dati saranno cancellati.
+        ]]>
+    </string>
+
+    <string name="pref_header_user">Impostazioni utente</string>
+    <string name="pref_title_version">Versione</string>
+    <string name="pref_header_notifications">Notifiche</string>
+    <string name="pref_title_notifications">Ricevi le notifiche</string>
+    <string name="pref_message_notifications">
+        Rimani aggiornato sulle novita\' e sulle nostre iniziative.
+        \nAttivando le notifiche potrai ricevere suggerimenti, notizie e altro
+    </string>
+    <string name="pref_header_info">Informazioni</string>
+    <string name="preference_library">Librerie utilizzate</string>
+    <string name="preference_summary">
+    <![CDATA[
+        SocialWFM utilizza librerie sviluppate dalla community Android.
+        \nSi ringrazia tutti per il contributo.
+    ]]>
+    </string>
+    <string name="tutorial_title">Rivedi il tutorial</string>
+    <string name="tutorial_summary">Rivedi il tutorial e scopri come SocialWFM può aiutarti</string>
+
+    <string name="precip_label">Precip: %1s{met-celcius}</string>
+    <string name="umid_label">Umidita\': %1s{met-celcius}</string>
+    <string name="wind_label">Vento: %1s Km/h</string>
+
+    <string name="temp_label">%1s{met-celcius}</string>
+    <string name="notifiche">Notifiche</string>
+
+    <string name="find_verify_code">codice di verifica</string>
+    <string name="error_message_notification">Non è possibile eliminare tutti i filtri</string>
+
+    <string name="anni_fa">%d anni</string>
+    <string name="anno_fa">%d anno</string>
+    <string name="mesi_fa">%d mesi</string>
+    <string name="mese_fa">%d mese</string>
+    <string name="settimane_fa">%d settimane</string>
+    <string name="settimana_fa">%d settimana</string>
+    <string name="giorni_fa">%d giorni</string>
+    <string name="giorno_fa">%d giorno</string>
+    <string name="ore_fa">%d ore</string>
+    <string name="ora_fa">%d ora</string>
+    <string name="minuti_fa">%d minuti</string>
+    <string name="minuto_fa">%d minuto</string>
+    <string name="secondi_fa">%d secondi</string>
+    <string name="secondo_fa">%d secondo</string>
+    <string name="un_attimo_fa">un attimo</string>
+
+    <string name="starred_label">Preferiti</string>
+    <string name="all_label">Tutti</string>
+    <string name="filter_search">Filtra tra gli utenti</string>
+    <string name="followers_profile">Ti seguono %d colleghi</string>
+    <string name="following_profile">Segui %d colleghi</string>
+
+    <string name="empty_label">Impossibile recuperare i dati!</string>
+    <string name="post_message">Stai postando un aggiornamento\nAttendere&#8230;</string>
+    <string name="group_number">%d membri</string>
+
+    <string name="condcontr_label">Cond. Contrattuali</string>
+    <string name="term_special_label">Esigenze speciali</string>
+
+    <string name="sede_tec_label">Sede tecnica %1s</string>
+    <string name="impianto_label">Impianto %1s</string>
+    <string name="plant_macrocat_label">Macrocategoria</string>
+    <string name="plant_codice_label">Codice Impianto</string>
+    <string name="plant_tec_label">Definizione Sede tecnica</string>
+    <string name="plant_desc_label">Descrizione apparecchiatura</string>
+
+    <string name="tech_fanghi">Fanghi</string>
+    <string name="tech_clorazione">Clorazione</string>
+    <string name="tech_sost_chimiche">Sostanze Chimiche</string>
+    <string name="tech_elettrico">Quadro Elettrico</string>
+    <string name="tech_componenti">Comp. Elettromeccanici</string>
+    <string name="tech_video">Video Sorveglianza</string>
+    <string name="groups">Gruppi</string>
+    <string name="search_hint">Cerca su Acea Social WFM</string>
+    <string name="funzione_non_attiva">Funzione non attiva</string>
+
+    <string name="impianto">Impianto</string>
+    <string name="cliente">Cliente</string>
+    <string name="filter_search_group">Filtra tra i gruppi</string>
+    <string name="campo_richiesto">Questo campo non può essere lasciato vuoto</string>
+    <string name="new_group_message">Stai creando un gruppo\nAttendere&#8230;</string>
+
+    <string name="detail_plant_label">Dettagli Sito</string>
+
+    <string name="zone">zona/frazione</string>
+    <string name="disp_agg_label">Disposizioni aggiuntive</string>
+    <string name="contract_label">Contratto</string>
+    <string name="tip_contract_label">Tipologia contratto</string>
+    <string name="cod_contract_label">Codice contratto</string>
+    <string name="role_user_label">Ruolo Utenza</string>
+    <string name="name_label">Nome</string>
+    <string name="phone_label">Telefono fisso</string>
+    <string name="phone_mobile_label">Telefono cellulare</string>
+    <string name="fax_label">Fax</string>
+    <string name="role_label">Ruolo</string>
+    <string name="mail_label">Mail</string>
+    <string name="address_label">Indirizzo</string>
+
+    <string name="action_login">Devi effettuare il login per visualizzare la lista ordini</string>
+    <string name="custom_empty_label">Dati cliente non disponibili</string>
+    <string name="plant_label_is_misto">Impianto Misto</string>
+    <string name="account_summary_wfm">Inserisci la tua utenza wfm</string>
+    <string name="account_title_wfm">Account Utente</string>
+    <string name="customer_tariffa_label">Tariffa</string>
+    <string name="importo_moroso_label">Importo moroso</string>
+    <string name="importo_scaduto_label">Importo scaduto</string>
+    <string name="ruolo_utenza_label">Ruolo utenza</string>
+    <string name="bp_label">Business partner</string>
+    <string name="tipologia_label">Tipologia</string>
+    <string name="zone_label">Zona</string>
+    <string name="piano_label">Piano</string>
+    <string name="ubicazione_label">Ubicazione</string>
+    <string name="interno_label">Interno</string>
+    <string name="scala_label">Scala</string>
+    <string name="close">Chiudi</string>
+    <string name="dialog_empthy_c">Impossibile caricare i dati, controlla la tua connessione</string>
+    <string name="dialog_empthy_m">Errore</string>
+    <string name="login_to_system">Accedi al sistema</string>
+    <string name="label_username">Username</string>
+    <string name="label_pwd">Password</string>
+    <string name="error_message_login">Username e/o password errati! Inserire le proprie credenziali di dominio ACEA ed assicurarsi che non siano scadute</string>
+    <string name="error_message_network">Attenzione! Controllare la propria connessione di rete</string>
+    <string name="error_username">username errato</string>
+    <string name="error_pwd">password errata</string>
+    <string name="denied_auth_t">Autorizzazione negata</string>
+    <string name="denied_auth_c">Devi autorizzare l\'accesso al tuo account per utilizzare l\'applicazione.\nL\'applicazione verrà chiusa.</string>
+    <string name="ok">OK</string>
+    <string name="retry">Riprova</string>
+
+    <string name="network_offline">
+        <![CDATA[
+        <p>Oppps! I nostri servizi sono offline, oppure la tua connesione di rete non funziona.</p>
+        <p>Riprova piu\' tardi. Grazie</p>
+        ]]>
+    </string>
+    <string name="surprendend_error">
+        <![CDATA[
+        Ci scusiamo per il disagio ma stiamo aggiornando la guida, \ntorna tra qualche minuto. \nGrazie
+        ]]>
+    </string>
+    <string name="caricamento_punti_mappa">Caricamento punti mappa</string>
+    <string name="cambia_puntamenti_app">L\'applicazione tenterà di stabilire una connessione con i sistemi di collaudo. Questa configurazione andrebbe utilizzata solo per scopi di test\nContinuare?</string>
+    <string name="si">Sì</string>
+    <string name="annulla">annulla</string>
+    <string name="nome_del_gruppo">Nome del gruppo</string>
+    <string name="nuova_cartella">Nuova cartella</string>
+    <string name="nome">Nome</string>
+    <string name="crea">Crea</string>
+
+    <string name="si_e_verificato_un_errore">Impossibile eseguire l\'operazione. Si è verificato un errore</string>
+    <string name="monte_ore">Monte ore</string>
+    <string name="data">Data</string>
+    <string name="inizio_riduzione">Inizio riduzione</string>
+    <string name="fine_riduzione">Fine riduzione</string>
+    <string name="pianificato">Pianificato</string>
+    <string name="goduto">Goduto</string>
+    <string name="cartellino_orologio_data_inizio">Data inizio</string>
+    <string name="cartellino_orologio_data_fine">Data fine</string>
+    <string name="cartellino_orologio_orario_di_lavoro_teorico">Orario di lavoro teorico</string>
+    <string name="cartellino_orologio_ore_produttive_accumulate">Ore produttive accumulate</string>
+    <string name="cartellino_orologio_subtitle">Cartellino orologio</string>
+    <string name="cartellino_filtra_data_titolo">Ordina per data</string>
+    <string name="cartellino_filtra_data_positive_text">Ordina</string>
+    <string name="dialog_data_inizio_fine_data_fine_maggiore_data_inizio">Data fine non può precedere data inizio</string>
+
+    <string name="attendere">Attendere</string>
+    <string name="download_dati_in_corso">Download dei dati in corso…</string>
+    <string name="riprova">Riprova</string>
+
+    <string name="dialog_data_inizio_fine_titolo">Seleziona date</string>
+    <string name="dialog_data_inizio_fine_positive">Aggiorna</string>
+    <string name="monte_ore_ordina_per_data">Ordina per data</string>
+
+
+    <!-- LEGENDA -->
+    <string name="legenda">Legenda</string>
+    <string name="legenda_assenza">Assenza</string>
+    <string name="legenda_assente">Assente</string>
+    <string name="legenda_festivo">Festivo</string>
+    <string name="legenda_errore">Errore</string>
+    <string name="legenda_correzione">Correzione</string>
+    <string name="legenda_al_lavoro">Al lavoro</string>
+    <string name="legenda_giorno_non_lavorativo">Giorno non lavorativo</string>
+    <string name="legenda_inviato">Inviato</string>
+    <string name="legenda_canc_richiesto">Canc. Richiesto</string>
+    <string name="legenda_piu_inserimenti">Più inserimenti</string>
+    <string name="giustificativo">Giustificativo:</string>
+    <string name="inizio">Data inizio</string>
+    <string name="ore_di_assenza">Ore di assenza</string>
+    <string name="fine">Data fine</string>
+    <string name="chiudi">Chiudi</string>
+    <string name="cartellino_orologio">Cartellino orologio</string>
+    <string name="timbrature">Timbrature</string>
+    <string name="aggiorna">Aggiorna</string>
+    <string name="ordina">Ordina</string>
+
+    <string name="non_ci_sono_dati">Non ci sono dati disponibili</string>
+
+    <string name="messaggi">Messaggi</string>
+    <string name="cartellino_download_fallito">Download fallito</string>
+    <string name="cartellino_download_fallito_controllare_la_connessione">Controllare la propria connessione di rete</string>
+    <string name="ora">Ora</string>
+    <string name="appunto">Appunto</string>
+    <string name="stato">Stato</string>
+    <string name="registrazione">Registrazione</string>
+    <string name="responsabile_approvazione">Responsabile approvazione</string>
+    <string name="societa">Società</string>
+    <string name="motivo">Motivo</string>
+    <string name="centro_di_costo">Centro di Costo</string>
+
+    <string name="calendario">Calendario</string>
+    <string name="timbrature_button_text">TIMBRATURE</string>
+    <string name="riepilogo_calendario_button_text">RIEPILOGO A CALENDARIO</string>
+    <string name="cartellino_download_fallito_controlla_range">C\'è stato un errore nel download del file. E\' possibile che il file non sia disponibile per l\'intervallo di date selezionate.</string>
+    <string name="dialog_data_inizio_fine_download">Download</string>
+    <string name="cartellino_download_fallito_reimposta_range">Modifica date</string>
+    <string name="timbrature_ordina_per_data">Ordina per data</string>
+    <string name="quadratura_tipo">Tipo messaggio</string>
+    <string name="periodo">Periodo</string>
+    <string name="quadratura_messaggio">Messaggio</string>
+    <string name="quadratura_cid">C.I.D.</string>
+    <string name="quadratura_nome_dipendente">Nome dipendente/cand</string>
+    <string name="quadratura_nome_data">Data</string>
+    <string name="duadratura">Quadratura</string>
+    <string name="quadratura">Analisi quadratura</string>
+    <string name="nuovo_giustificativo">Nuovo giustificativo</string>
+    <string name="send">Invia</string>
+    <string name="quadratura_orina_per_data">Ordina per data</string>
+    <string name="attenzione">Attenzione!</string>
+    <string name="edit_giustificativo">Modifica giustificativo</string>
+    <string name="reperibilita">Reperibilità</string>
+    <string name="data_inizio">Data inizio</string>
+    <string name="ora_inizio">Ora inizio</string>
+    <string name="ora_fine">Ora fine</string>
+    <string name="export_pdf">Esporta PDF</string>
+    <string name="export_excel">Esporta EXCEL</string>
+    <string name="export_file_fallito">Non è possibile esportare il file</string>
+    <string name="Cartella">Cartella</string>
+    <string name="documento">Documento</string>
+    <string name="galleria">Galleria</string>
+    <string name="Foto">Foto</string>
+    <string name="Video">Video</string>
+    <string name="edit_not_allowed">Non è possibile editare il giustificativo selezionato</string>
+    <string name="modifica">Modifica</string>
+    <string name="cancella">Cancella</string>
+    <string name="note">Note</string>
+    <string name="modifica_timbratura">Modifica timbratura</string>
+    <string name="nuova_timbratura">Nuova timbratura</string>
+    <string name="invia">Invia</string>
+    <string name="registrazione_tempi">Registrazione tempi</string>
+    <string name="salva">Salva</string>
+    <string name="cancella_timbratura">Cancella timbratura</string>
+    <string name="giustificativi">Giustificativi</string>
+    <string name="codice_fiscale">Codice fiscale</string>
+    <string name="data_di_nascita">Data di nascita</string>
+    <string name="domicilio">Domicilio</string>
+    <string name="residenza">Residenza</string>
+    <string name="dati_personali">Dati Personali</string>
+    <string name="luogo_di_nascita">Luogo di nascita</string>
+    <string name="sesso">Sesso</string>
+    <string name="cognome">Cognome</string>
+    <string name="titolo">Titolo</string>
+    <string name="cognome_acquisito">Cognome acquisito</string>
+    <string name="stato_civile">Stato civile</string>
+    <string name="numero_di_figli">Numero di figli</string>
+    <string name="cittadinanza">Cittadinanza</string>
+    <string name="paese_di_origine">Paese di origine</string>
+    <string name="provincia">Provincia</string>
+    <string name="lingua">Lingua</string>
+    <string name="gruppo">Gruppo</string>
+    <string name="indirizzo">Indirizzo</string>
+    <string name="numero_civico">Civico</string>
+    <string name="tipo_via">Tipo via</string>
+    <string name="palazzina">Palazzina</string>
+    <string name="scala">Scala</string>
+    <string name="interno">Interno</string>
+    <string name="citta">Città</string>
+    <string name="regione">Regione</string>
+    <string name="cap">CAP</string>
+    <string name="paese">Paese</string>
+    <string name="numero_di_telefono">Numero di telefono</string>
+    <string name="residenza_uguale_domicilio">Domicilio coincide con la residenza</string>
+    <string name="errore_download_dati_personali">Errore nel download dei dati personali</string>
+    <string name="cedolino">Cedolino</string>
+    <string name="nome_file">Nome documento</string>
+    <string name="cud_cedolino_subtitle">Cedolino</string>
+    <string name="seleziona_anno">Seleziona anno</string>
+    <string name="anno">Anno</string>
+    <string name="mese">Mese</string>
+    <string name="matricola">Matricola</string>
+    <string name="data_fine">Data fine</string>
+    <string name="password_scaduta">Ci sono problemi di utenza</string>
+    <string name="password_scaduta_content">La tua password di dominio ACEA potrebbe essere scaduta o la tua utenza potrebbe non essere correttamente profilata per l\'accesso ai sistemi.\n Nel primo caso rinnova la password e ripeti l\'accesso all\'applicazione. Altrimenti contatta il supporto SWFM.</string>
+    <string name="ricerca_gruppi">Cerca gruppi nel social</string>
+    <string name="cerca_un_gruppo">Ricerca gruppi</string>
+    <string name="cerca_un_contatto">Ricerca contatti</string>
+    <string name="nome_gruppo">Nome gruppo</string>
+    <string name="nome_contatto">Nome contatto</string>
+    <string name="naviga_mesi">Naviga i mesi del calendario con i pulsanti freccia</string>
+    <string name="crea_giustificativo">Crea un nuovo giustificativo</string>
+    <string name="legenda_intro">Legenda</string>
+    <string name="legenda_intro_descrizione">Visualizza la legenda dei colori mostrati nel calendario</string>
+    <string name="messaggi_intro">Messaggi</string>
+    <string name="messaggi_intro_descrizione">Visualizza i messaggi del sistema su eventuali anomalie di quadratura</string>
+    <string name="seleziona_tipo_intro">Puoi selezionare la tipologia di documento da visualizzare (CUD o Cedolino)</string>
+    <string name="help">Help</string>
+    <string name="lista_degli_odl"> La lista viene aggiornata in maniera automatica al completamento o all\'assegnazione di nuovi ordini.</string>
+    <string name="schermata_di_dettaglio">Schermata di dettaglio di un ordine di lavoro</string>
+    <string name="schermata_di_dettaglio_descrizione">Mostra le informazioni relative all\'ordine selezionato in lista. Riporta info come:</string>
+    <string name="dati_logistici">Dati logistici</string>
+    <string name="link_impianto">Link alla scheda impianto</string>
+    <string name="link_cliente">Link a scheda cliente (se esiste un cliente associato all\'ordine)</string>
+    <string name="lista_odl_intro">Lista ordini di lavoro</string>
+    <string name="chiude_dettaglio_ordine">Chiude il dettaglio dell\'ordine e visualizza la mappa sottostante</string>
+    <string name="mappa_a_tutto_schermo">Visualizza la mappa a tutto schermo</string>
+    <string name="ripristina_la_dimensione_della_mappa">Ripristina la dimensione della mappa</string>
+    <string name="lista_gruppi">Lista dei gruppi social di cui fai parte</string>
+    <string name="ricerca_gruppi_auto">Ricerca gruppi nel social network</string>
+    <string name="ricerca_contatti_auto">Ricerca contatti nel social network</string>
+    <string name="crea_un_gruppo">Crea un nuovo gruppo social e invita le persone che preferisci</string>
+    <string name="scrivi_qui_io_tuo_post">Scrivi qui il tuo post</string>
+    <string name="menziona_colleghi">Puoi taggare i tuoi colleghi usando questo pulsante e ricercando i loro nomi</string>
+    <string name="invia_il_post">Invia il tuo post</string>
+    <string name="lista_contatti">Lista contatti</string>
+    <string name="lista_contatti_descrizione">Quest\'area visualizza tutti i contatti che stai attualmente seguendo</string>
+    <string name="pager_contatti_intro">Informazioni sul contatto</string>
+    <string name="pager_contatti_intro_descrizione">Scorri le sezioni per visualizzare le informazioni sul contatto</string>
+    <string name="crea_un_post">Aggiungi un post alla timeline sottostante</string>
+    <string name="segui_un_contatto">Segui o smetti di seguire un contatto</string>
+    <string name="segui_un_gruppo">Segui o smetti di seguire un gruppo</string>
+    <string name="intro_ess_filtro_data">Uno degli elementi più comuni della sezione ESS (Employee Self Service) è il pulsante di selezione tipo. Lo troverai in molte delle schermate disponibili in quest\'area</string>
+    <string name="intro_ess_filtro_tipo">Un altro elemento fondamentale di questa sezione è il filtro di selezione data. Utilizzalo per visualizzare i dati relativi al periodo temporale che ti interessa.</string>
+    <string name="esporta_dati_visualizzati">Esportare i dati visualizzati in diversi formati (PDF, excel)</string>
+    <string name="impostazioni">Impostazioni</string>
+    <string name="cambia_impostazioni">Cambia impostazioni di connessione</string>
+    <string name="new_group_descrizione">Descrizione</string>
+    <string name="feed_delete_dialog_annulla">ANNULLA</string>
+    <string name="feed_delete_dialog_ok">OK</string>
+    <string name="feed_delete_dialog_content">Sei sicuro di voler eliminare il feed?</string>
+    <string name="feed_delete_dialog_titolo">Feed</string>
+    <string name="feed_delete_success">Feed eliminato con successo</string>
+    <string name="feed_delete_failed">Impossibile eliminare il feed. Si è verificato un errore.</string>
+    <string name="feed_delete_progress">Eliminazione del feed in corso...</string>
+    <string name="gruppo_delete_progress">Eliminazione del gruppo in corso...</string>
+    <string name="gruppo_delete_success">Gruppo eliminato con successo</string>
+    <string name="gruppo_delete_failed">Impossibile eliminare il gruppo. Si è verificato un errore.</string>
+    <string name="label_env">TEST</string>
+    <string name="mio_profilo_subtitle">Il mio profilo</string>
+    <string name="newfeed_empty_text_message">Devi inserire un testo!</string>
+    <string name="non_hai_ordini_di_lavoro">Non hai ordini di lavoro assegnati</string>
+    <string name="ottimo">Ottimo</string>
+    <string name="invite_user_group_error">Non è possibile invitare questi utenti. Errori con i dati anagrafici.</string>
+    <string name="e_stato_utile_a_n_persone">persone hannoritenuto utile questo post</string>
+    <string name="group_media_no_data">Non ci sono allegati in questa cartella</string>
+    <string name="sede_tecnica">sede_tecnica</string>
+    <string name="empty_view_aggiorna">Aggiorna</string>
+    <string name="empty_view_riprova">Riprova</string>
+    <plurals name="plant_post_views_count">
+        <item quantity="zero">Non è stato visualizzato</item>
+        <item quantity="one">Visualizzato una volta</item>
+        <item quantity="other">Visualizzato %d volte</item>
+    </plurals>
+    <string name="scrivi_il_primo_post_su_questo_impianto">Scrivi tu il primo post su questo impianto</string>
+    <string name="non_ci_sono_post">Nessun post</string>
+    <string name="scrivi_un_post_impianto">Scrivi un post su questo impianto</string>
+    <string name="groups_list_no_groups_found">Nessun gruppo trovato</string>
+    <string name="groups_list_no_groups_found_description">Cerca un gruppo o creane uno aggiungengo i contatti che preferisci</string>
+    <string name="connection_error">Errore di connessione</string>
+    <string name="contacts_list_no_contacts_found">Nessun contatto trovato</string>
+    <string name="contacts_list_no_contacts_found_description">Puoi cercare un contatto e seguirlo</string>
+    <string name="contacts_list_no_contacts_found_update">Aggiorna</string>
+    <string name="new_post_nessun_utente_trovato">Nessun utente trovato</string>
+    <string name="new_post_ora">ora</string>
+    <string name="scrivi">Scrivi</string>
+    <string name="change_image_dialog_errore">Si è verificato un errore</string>
+    <string name="elimina_gruppo">Elimina gruppo</string>
+    <string name="gruppo_delete_dialog_titolo">Gruppo</string>
+    <string name="gruppo_delete_dialog_content">Sei sicuro di voler eliminare il gruppo?</string>
+    <string name="chi_e_stato_su_impianto">Chi è stato su questo impianto ha scritto</string>
+    <string name="comment_delete_success">Commento cancellato con successo</string>
+    <string name="comment_delete_failed">Si è verificato un errore. Impossibile cancellare il commento</string>
+    <string name="comment_delete_progress">Eliminazione commento in corso…</string>
+    <string name="comment_delete_dialog_titolo">Commento</string>
+    <string name="comment_delete_dialog_content">Stai per cancellare il commento. Vuoi continuare?</string>
+    <string name="comment_delete_dialog_annulla">Annulla</string>
+    <string name="comment_delete_dialog_ok">OK</string>
+    <string name="comment_dialog_nessun_commento">Nessun commento trovato</string>
+    <string name="title_dettagliogruppo_abbandona">Abbandona gruppo</string>
+    <string name="msg_dettagliogruppo_abbandona">Vuoi davvero abbandonare il gruppo?</string>
+    <string name="action_dettagliogruppo_abbandona">Abbandona</string>
+    <string name="action_dettagliogruppo_resta_nel_gruppo">Resta</string>
+    <string name="myworkdetail_no_odl_selected">Seleziona un ordine dalla lista</string>
+    <string name="feeds_plant_update">Aggiorna</string>
+    <string name="feeds_plant_update_message">Ci sono aggiornamenti</string>
+    <string name="feeds_plant_feed_deleted">Feed cancellato</string>
+    <string name="feeds_plant_feed_created">Feed creato</string>
+    <string name="feed_dialog_load_content_progress">Caricamento feed in corso…</string>
+    <string name="title_membri_gruppo_sono_stati_invitati">Le persone sono state invitate a partecipare al gruppo</string>
+    <string name="dialog_giustificativo_edit_ore_di_assenza_presenza">Ore di assenza/presenza</string>
+    <string name="giustificativi_dialog_campi_non_inseriti">Tutti i campi richiesti non sono avvalorati</string>
+    <string name="giustificativi_dialog_edit_invia">Invia</string>
+    <string name="giustificativi_dialog_edit_conferma">Conferma</string>
+    <string name="giustificativi_dialog_edit_annulla">Annulla</string>
+    <string name="label_menu_concorsi">Concorsi</string>
+    <string name="title_activity_concorsi">Social Play</string>
+    <string name="title_activity_survey">Survey</string>
+    <string name="alert_jabber_non_trovato">Jabber non trovato</string>
+    <string name="alert_jabber_non_trovato_msg">Per chattare con i tuoi colleghi devi installare l\'applicazione Jabber. Installala dal MaaS 360</string>
+    <string name="label_jabber">jabber</string>
+    <string name="label_menu_survey">Survey</string>
+    <string name="survey_disponibili">Survey disponibili</string>
+    <string name="esci">Esci</string>
+    <string name="errore">Errore</string>
+    <string name="non_hai_survey_assegnate">Non hai nessuna survey assegnata</string>
+    <string name="concorsi_disponibili">Avviso</string>
+    <string name="non_ci_sono_concorsi_Attivi">Non ci sono concorsi attivi</string>
+    <string name="errore_ssl">La versione SSL del servizio non è supportata da questo dispositivo. Rivolgiti al servizio di Help Desk per aggiornare  il tuo tablet</string>
+</resources>

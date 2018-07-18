@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="it.acea.android.socialwfm">
+
+    <supports-screens
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:requiresSmallestWidthDp="600"
+        android:smallScreens="false"
+        android:xlargeScreens="true" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name=".app.SocialWFMApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.SocialWFM"
+        tools:replace="android:theme">
+        <provider
+            android:name=".utils.GenericFileProvider"
+            android:authorities="${applicationId}.it.acea.android.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity
+            android:name=".app.ui.SplashActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.AuthenticatedWFMUser"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity android:name=".app.ui.SecondOauthActivity" />
+        <activity
+            android:name=".app.ui.OauthActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".app.ui.MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <category android:name="it.acea.android.socialwfm.app.ui.HOME_CATEGORY" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.SearchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <data
+                    android:host="hashtag"
+                    android:scheme="acea" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".app.ui.WebViewActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".app.ui.ThirdPartActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".app.ui.SupportActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".app.ui.OpenProfileActivity"
+            android:screenOrientation="landscape">
+            <intent-filter>
+                <data
+                    android:host="profile"
+                    android:scheme="acea" />
+
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:label="@string/app_name"
+            android:theme="@style/FilePickerTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.GET_CONTENT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="wheater.map.api.key"
+            android:value="29e1a448536b15548450a5903136e9a9" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_map_api_key" />
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="b53017d415b9aef5870daaa97b609cffc458397e" />
+
+
+
+        <activity
+            android:name=".app.ui.ConcorsiActivity"
+            android:screenOrientation="landscape"
+            android:label="@string/title_activity_concorsi"/>
+
+        <activity
+            android:name=".app.ui.SurveyActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/title_activity_survey"/>
+    </application>
+
+</manifest>

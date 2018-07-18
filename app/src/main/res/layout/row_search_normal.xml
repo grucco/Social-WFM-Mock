@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:id="@+id/row"
+    android:paddingRight="60dp"
+    android:paddingLeft="60dp"
+    android:paddingTop="4dp"
+    android:background="#ffffff"
+    android:paddingBottom="4dp"
+    android:layout_height="40dp">
+
+    <com.mikepenz.materialdrawer.view.BezelImageView
+        android:layout_width="32dp"
+        android:id="@+id/image"
+        android:layout_height="32dp" />
+
+    <TextView
+        android:paddingLeft="4dp"
+        android:id="@+id/label"
+        android:textColor="@color/secondary_text"
+        android:text="dsadasdas"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

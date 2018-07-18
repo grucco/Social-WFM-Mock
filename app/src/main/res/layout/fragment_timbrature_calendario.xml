@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/EssContainer"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        style="@style/FragmentHeader"
+        android:id="@+id/linearLayout4"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_date_picker"
+            android:id="@+id/timbrature_calendario_date_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:alpha="@dimen/fragment_alpha"
+        android:weightSum="8"
+        android:layout_below="@id/linearLayout4">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timbrature_calendario_previous_date"
+            android:src="@drawable/ic_chevron_left"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.3" />
+
+        <com.alamkanak.weekview.WeekView
+            android:alpha="@dimen/fragment_alpha"
+            android:id="@+id/weekView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:eventTextColor="@android:color/white"
+            app:eventMarginVertical="1dp"
+            app:eventPadding="5dp"
+            app:textSize="12sp"
+            app:hourHeight="60dp"
+            app:hourSeparatorColor="@android:color/white"
+            app:hourSeparatorHeight="3dp"
+            app:headerColumnPadding="3dp"
+            app:headerColumnTextColor="#8f000000"
+            app:headerRowPadding="12dp"
+            app:columnGap="2dp"
+            app:noOfVisibleDays="7"
+            app:overlappingEventGap="1dp"
+            app:headerRowBackgroundColor="#05000000"
+            app:dayBackgroundColor="#05000000"
+            app:todayBackgroundColor="#1848adff"
+            app:headerColumnBackground="#ffffffff"
+            android:layout_weight="7.4" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/timbrature_calendario_next_date"
+            android:src="@drawable/ic_chevron_right"
+            android:layout_weight="0.3" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/primary_ess">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dialog_header_height"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/legenda"
+            android:id="@+id/textView"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/close_dialog"
+            android:layout_toStartOf="@+id/close_dialog" />
+
+        <ImageView
+            android:id="@+id/close_dialog"
+            android:src="@drawable/ic_close_dialogue"
+            android:paddingRight="20dp"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_assenza" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_assenza" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_festivo" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_festivo" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_errore" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_errore" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_correzione" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_correzione" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_al_lavoro" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_al_lavoro" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LegendaTheme"
+        android:orientation="horizontal"
+        android:weightSum="1.0">
+
+        <View
+            style="@style/LegendaTheme.Color"
+            android:background="@color/legenda_giorno_non_lavorativo" />
+
+        <TextView
+            style="@style/LegendaTheme.Label"
+            android:text="@string/legenda_giorno_non_lavorativo" />
+    </LinearLayout>
+</LinearLayout>

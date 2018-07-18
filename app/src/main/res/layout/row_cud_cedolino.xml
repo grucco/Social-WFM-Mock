@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssRow"
+    android:weightSum="4">
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cud_cedolino_nome_file"
+        style="@style/RowField.Descrizione.IconLeft"
+        android:layout_weight="2.0" />
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_cud_cedolino_mese"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        style="@style/RowField"
+        android:paddingRight="50dp"
+        android:gravity="end">
+        <android.support.v7.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:background="?attr/selectableItemBackgroundBorderless">
+
+            <ImageView
+                android:id="@+id/cud_cedolino_button_download_pdf"
+                android:padding="4dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_download_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+</LinearLayout>

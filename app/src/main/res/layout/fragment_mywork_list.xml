@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:background="@drawable/background_white">
+
+    <tr.xip.errorview.ErrorView xmlns:errorview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        errorview:ev_retryButtonText="@string/retry"
+        errorview:ev_subtitle="@string/error_message_network" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list_mywork"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:visibility="gone" />
+
+    <com.pnikosis.materialishprogress.ProgressWheel
+        android:id="@+id/progress"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_centerInParent="true"
+        wheel:matProg_barColor="@color/accent"
+        wheel:matProg_progressIndeterminate="true" />
+
+</RelativeLayout>

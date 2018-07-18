@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="bottom|center_horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dp"
+    android:paddingLeft="100dp"
+    android:paddingRight="60dp">
+
+    <LinearLayout
+        android:id="@+id/first_row"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_festivo"/>
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_festivo" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_inviato"/>
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_inviato" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_assenza"/>
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_assente"/>
+        </LinearLayout>
+   </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/second_row"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3"
+        android:orientation="horizontal">
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_canc_richiesto"/>
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_canc_richiesto"/>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_giorno_non_lavorativo"/>
+
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_giorno_non_lavorativo" />
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LegendaRowGiustificativi">
+            <View
+                style="@style/LegendaGiustificativiColor"
+                android:background="@color/legenda_piu_inserimenti"/>
+
+            <TextView
+                style="@style/LegendaGiustificativiLabel"
+                android:text="@string/legenda_piu_inserimenti" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

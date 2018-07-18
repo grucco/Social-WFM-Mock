@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="75dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:background="?attr/selectableItemBackground"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.8"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:id="@+id/logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <View
+                android:layout_width="12dp"
+                android:layout_height="match_parent" />
+            <TextView
+                android:id="@+id/nome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:textColor="@color/primary_text"
+                android:textSize="@dimen/font_size_16_sp"
+                android:textStyle="bold"
+                tools:text="Gruppo"/>
+        </LinearLayout>
+
+        <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:gravity="right|center_vertical"
+                >
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:text="{faw-lock}"
+                    android:id="@+id/icon_lock"
+                    android:textColor="@color/md_grey_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:visibility="gone"/>
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:text="{faw-building}"
+                    android:id="@+id/icon_auto"
+                    android:layout_marginLeft="5dp"
+                    android:textColor="@color/md_grey_700"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16sp"
+                    android:visibility="gone"/>
+
+                    <com.mikepenz.iconics.view.IconicsTextView
+                        android:text="{faw-key}"
+                        android:id="@+id/icon_admin"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/md_grey_700"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="16sp"
+                        android:visibility="gone"/>
+            </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="70dp"
+        android:background="@color/md_grey_700" />
+
+</LinearLayout>

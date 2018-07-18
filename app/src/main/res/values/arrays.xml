@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tab_profile">
+        <item>Info</item>
+        <item>Lavoro</item>
+        <item>Social</item>
+    </string-array>
+
+    <string-array name="tab_cliente">
+        <!--item>Generali</item-->
+        <item>Fornitura</item>
+        <item>Contatto</item>
+    </string-array>
+
+    <string-array name="tab_impianto">
+        <item>Generali</item>
+        <item>Tecniche</item>
+        <!--item>Media</item -->
+    </string-array>
+
+    <string-array name="tab_group">
+        <item>Overview</item>
+        <item>Membri</item>
+        <item>Media</item>
+    </string-array>
+    <string-array name="cartellino_orologio_spinner_values">
+        <item>Ultimi 3 mesi</item>
+        <item>Ultimi 6 mesi</item>
+        <item>Ultimi 12 mesi</item>
+        <item>Tutti i cartellini</item>
+    </string-array>
+    <string-array name="cartellino_orologio_spinner_keys">
+        <item>3MONTHS</item>
+        <item>6MONTHS</item>
+        <item>12MONTHS</item>
+        <item>ALL</item>
+    </string-array>
+    <string-array name="cartellino_orologio_filtra_data_items">
+        <item>Data inizio più recente</item>
+        <item>Data inizio meno recente</item>
+        <item>Data fine più recente</item>
+        <item>Data fine meno recente</item>
+    </string-array>
+
+    <string-array name="cud_cedolino_spinner_values">
+        <item>Cedolino</item>
+        <item>Cud</item>
+    </string-array>
+
+    <string-array name="monte_ore_sort_items">
+        <item>Inizio riduzione ordine crescente</item>
+        <item>Inizio riduzione ordine decrescente</item>
+        <item>Fine riduzione ordine crescente</item>
+        <item>Fine riduzione ordine decrescente</item>
+    </string-array>
+
+    <string-array name="timbrature_sort_items">
+        <item>Data timbratura più recente</item>
+        <item>Data timbratura meno recente</item>
+    </string-array>
+
+    <string-array name="quadratura_sort_items">
+        <item>Data anomalia più recente</item>
+        <item>Data anomalia meno recente</item>
+    </string-array>
+
+    <string-array name="tabstrip_timbrature">
+        <item>TIMBRATURE</item>
+        <item>RIEPILOGO A CALENDARIO</item>
+    </string-array>
+
+    <string-array name="single_choice_switch_env">
+        <item>Modalità normale</item>
+        <item>Modalità di prova (solo per utilizzo in training)</item>
+    </string-array>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <bool name="is_tablet">true</bool>
+
+    <string name="app_name" translatable="false">Social WFM</string>
+    <string name="app_name_title" translatable="false">Social WFM</string>
+    <string name="app_name_version" translatable="false">%1$s V. %2$s</string>
+
+    <string name="HOME_CATEGORY" translatable="false">
+        it.acea.android.socialwfm.app.ui.HOME_CATEGORY
+    </string>
+
+    <string name="database_conf_name" translatable="false">SocialWFM-DB</string>
+    <integer name="database_conf_version">1</integer>
+
+    <string name="empty" translatable="false" />
+    <string name="not_value" translatable="false">--</string>
+
+    <string name="good_customer_icon" translatable="false">%1s</string>
+    <!--string name="google_map_api_key">AIzaSyATNAfOsUSC9fT18C9fqSa566150qjgk1Q</string-->
+
+</resources>

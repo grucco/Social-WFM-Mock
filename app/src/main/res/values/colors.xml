@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary">#09539F</color>
+    <color name="primary_dark">#052A50</color>
+    <color name="primary_light">#85AAD0</color>
+    <color name="accent">#FFA400</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#8C8C8C</color>
+    <color name="tag_bg">#789ec4</color>
+    <color name="white">#ffffff</color>
+
+    <color name="replace_oauth">#0095d9</color>
+    <color name="replace_oauth_1">#f7f7f7</color>
+    <color name="replace_oauth_2">#e3e3e3</color>
+
+
+    <drawable name="window_bg">@color/divider</drawable>
+    <!--drawable name="window_bg_empty">#</drawable -->
+
+    <!-- OVERWRITE THESE COLORS FOR A LIGHT THEME -->
+
+    <!-- MaterialDrawer DEFAULT colors -->
+    <color name="material_drawer_background">#fefafa</color> <!-- menu background -->
+    <!-- Material DEFAULT text / items colors -->
+    <color name="material_drawer_primary_text">@color/primary_text</color>
+    <color name="material_drawer_primary_icon">#8A000000</color> <!-- menu item selected -->
+    <color name="material_drawer_selected_text">@color/primary_text
+    </color> <!-- menu item text selected -->
+
+    <color name="material_drawer_secondary_text">@color/primary</color>
+    <!--color name="material_drawer_hint_text">#42000000</color -->
+    <color name="material_drawer_divider">#1F000000</color>
+
+    <!-- Material DEFAULT drawer colors -->
+    <color name="material_drawer_selected">#E8E8E8</color>
+    <color name="material_drawer_header_selection_text">@color/icons</color>
+
+    <drawable name="primary_dark">@color/primary_dark</drawable>
+    <drawable name="background_white">#fefafa</drawable> <!-- menu background -->
+
+    <color name="toolbar_bg_start">#d1d1d1</color>
+    <color name="toolbar_bg_middle">#ebebeb</color>
+    <color name="toolbar_bg_end">#ffffff</color>
+
+    <color name="item_selected_color">#c3c3c3</color>
+    <color name="item_unselected_color">#ffffff</color>
+
+    <color name="ess_recycler_vier_divider">#d2cfcc</color>
+    <color name="primary_ess">#F2B32F</color>
+    <color name="secondary_ess">#f8b323</color>
+    <color name="list_background">#ECEBEA</color>
+
+    <!-- Legenda -->
+    <color name="legenda_assenza">#BF24AF</color>
+    <color name="legenda_festivo">#43DF24</color>
+    <color name="legenda_errore">#FF6758</color>
+    <color name="legenda_correzione">#CCF308</color>
+    <color name="legenda_al_lavoro">#F40857</color>
+    <color name="legenda_giorno_non_lavorativo">#AAAF94</color>
+    <color name="legenda_inviato">#24A1DF</color>
+    <color name="legenda_canc_richiesto">#F60E0E</color>
+    <color name="legenda_piu_inserimenti">#0EF6E7</color>
+
+    <!-- Start CalendarView Colors -->
+
+    <!-- General -->
+    <color name="roboto_calendar_circle">#e6e7e8</color>
+    <color name="roboto_calendar_background">#FFFFFF</color>
+    <color name="roboto_calendar_green">#339DB5</color>
+    <color name="roboto_calendar_red">#e98885</color>
+    <color name="roboto_calendar_blue">#55c6da</color>
+    <color name="roboto_calendar_white">#FFFFFF</color>
+
+    <!-- Fonts -->
+    <color name="roboto_calendar_date_title">#2A99BC</color>
+    <color name="roboto_calendar_day_of_week">#161d20</color>
+    <color name="roboto_calendar_day_of_month">#849ba9</color>
+    <color name="roboto_calendar_current_day_of_month">#33b5e5</color>
+
+    <!-- End CalendarView Colors -->
+    
+    <color name="mywork_detail_no_odl_selected">#f1fefeff</color>
+    <color name="feeds_plant_container_background">#50ffffff</color>
+</resources>    

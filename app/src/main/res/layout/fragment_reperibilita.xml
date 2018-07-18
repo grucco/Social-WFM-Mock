@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:background="@drawable/background_ess">
+
+    <LinearLayout
+        style="@style/FragmentHeader"
+        android:id="@+id/header_reperibilita"
+        android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:textColor="@color/white"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/ic_date_picker"
+            android:id="@+id/reperibilita_calendario_date_select" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:alpha="@dimen/fragment_alpha"
+        android:layout_below="@+id/header_reperibilita"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/arrow_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/ic_chevron_left" />
+
+        <org.fingerlinks.mobile.android.utils.widget.calendar.CalendarView
+            style="@style/Calendario"
+            android:id="@+id/calendar_1"
+            android:baselineAligned="true" />
+
+        <org.fingerlinks.mobile.android.utils.widget.calendar.CalendarView
+            style="@style/Calendario"
+            android:id="@+id/calendar_2"
+            android:baselineAligned="true" />
+
+        <org.fingerlinks.mobile.android.utils.widget.calendar.CalendarView
+            style="@style/Calendario"
+            android:id="@+id/calendar_3"
+            android:baselineAligned="true" />
+
+        <ImageView
+            android:layout_gravity="center_vertical"
+            android:id="@+id/arrow_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            android:src="@drawable/ic_chevron_right" />
+
+    </LinearLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>

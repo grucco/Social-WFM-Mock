@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:background="@drawable/background_ess">
+
+    <LinearLayout
+        style="@style/FragmentHeader"
+        android:id="@+id/cartellino_orologio_header"
+        android:weightSum="6.0">
+
+        <Spinner
+            style="@style/FragmentHeaderField"
+            android:id="@+id/cartellino_orologio_spinner"
+            android:spinnerMode="dropdown"
+            android:theme="@style/customSpinnerTheme"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:id="@+id/cartellino_orologio_data_inizio_text"
+            android:text="@string/cartellino_orologio_data_inizio"
+            android:layout_weight="1" />
+
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:id="@+id/cartellino_orologio_data_fine_text"
+            android:text="@string/cartellino_orologio_data_fine"
+            android:layout_weight="1" />
+
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:text="@string/cartellino_orologio_orario_di_lavoro_teorico"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:text="@string/cartellino_orologio_ore_produttive_accumulate"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="1">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:id="@+id/cartellino_orologio_date_range_button"
+                android:scaleType="center"
+                android:background="@color/accent"
+                android:src="@drawable/ic_date_picker" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/cartellino_orologio_header">
+
+        <include
+            layout="@layout/empty_view"
+            android:layout_height="match_parent"
+            android:layout_width="match_parent" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/refresh_layout">
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/cartellino_orologio_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scrollbars="vertical"
+                android:background="@color/list_background"
+                android:alpha="@dimen/fragment_alpha" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+    </FrameLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>

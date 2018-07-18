@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tr.xip.errorview.ErrorView xmlns:errorview="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/error_view"
+    errorview:ev_title="@string/error_view_oops"
+    errorview:ev_subtitle="@string/error_message_network"
+    errorview:ev_retryButtonText="@string/riprova"
+    android:visibility="gone"
+    android:alpha="0.90"
+    android:clickable="true"
+    android:background="@color/md_grey_50" />

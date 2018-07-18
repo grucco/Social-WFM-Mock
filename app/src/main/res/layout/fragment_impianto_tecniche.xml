@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        card_view:cardCornerRadius="0dp"
+        card_view:cardElevation="2dp"
+        card_view:cardPreventCornerOverlap="false"
+        card_view:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:padding="25dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plant_macrocat_label"
+                        android:textSize="@dimen/font_size_10_sp" />
+
+                    <TextView
+                        android:id="@+id/plant_macrocat_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:textSize="@dimen/font_size_14_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plant_codice_label"
+                        android:textSize="@dimen/font_size_10_sp" />
+
+                    <TextView
+                        android:id="@+id/plant_codice_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:textSize="@dimen/font_size_14_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plant_tec_label"
+                        android:textSize="@dimen/font_size_10_sp" />
+
+                    <TextView
+                        android:id="@+id/plant_tec_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:textSize="@dimen/font_size_14_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/plant_desc_label"
+                        android:textSize="@dimen/font_size_10_sp" />
+
+                    <TextView
+                        android:id="@+id/plant_desc_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="25dp"
+                        android:textSize="@dimen/font_size_14_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:visibility="visible"
+                android:layout_marginLeft="12dp"
+                android:layout_width="1dp"
+                android:background="@color/secondary_text"
+                android:layout_marginRight="12dp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+                android:visibility="visible"
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textAllCaps="true"
+                    android:gravity="center_horizontal"
+                    android:text="@string/detail_plant_label"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <View
+                    android:layout_marginTop="12dp"
+                    android:background="@color/secondary_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_fanghi"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_fanghi"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_fanghi"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_clorazione"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_clorazione"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_clorazione"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_sost_chimiche"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_chemical"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_sost_chimiche"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_misto"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_misto"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/plant_label_is_misto"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_elettrico"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_quadro_elettrico"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_elettrico"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_elettromeccanici"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_elettromeccanici"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_componenti"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+
+                        <ToggleButton
+                            android:id="@+id/toggle_videosorveglianza"
+                            android:layout_width="36dp"
+                            android:layout_height="36dp"
+                            android:background="@drawable/bg_videosorveglianza"
+                            android:textOff="@string/empty"
+                            android:textOn="@string/empty"
+                            android:clickable="false"
+                            android:layout_margin="6dp" />
+
+                        <TextView
+                            android:layout_width="50dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tech_video"
+                            style="@style/PlantTechinicalLabel" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</ScrollView>

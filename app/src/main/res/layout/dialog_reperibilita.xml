@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        style="@style/DialogHeader"
+        android:text="@string/reperibilita"
+        android:id="@+id/textView7" />
+
+    <TextView
+        style="@style/ReperibilitaItem.Label"
+        android:layout_width="match_parent"
+        android:id="@+id/dettaglio_reperibilita_descrizione_tv"
+        android:gravity="start"
+        android:padding="30dp"
+        android:layout_below="@+id/textView7" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dettaglio_reperibilita_descrizione_tv"
+        android:id="@+id/linearLayout5"
+        android:weightSum="3">
+
+        <TextView
+            style="@style/ReperibilitaItem.Label"
+            android:text="@string/data_inizio"
+            android:id="@+id/textView6"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/ReperibilitaItem.Label"
+            android:text="@string/ora_inizio"
+            android:id="@+id/textView12"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/ReperibilitaItem.Label"
+            android:text="@string/ora_fine"
+            android:id="@+id/textView13"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout5"
+        android:weightSum="3">
+
+        <TextView
+            style="@style/ReperibilitaItem.Field"
+            android:id="@+id/dettaglio_reperibilita_data_inizio_tv"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/ReperibilitaItem.Field"
+            android:text="Medium Text"
+            android:id="@+id/dettaglio_reperibilita_ora_inizio_tv"
+            android:layout_weight="1" />
+
+        <TextView
+            style="@style/ReperibilitaItem.Field"
+            android:text="Medium Text"
+            android:id="@+id/dettaglio_reperibilita_ora_fine_tv"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

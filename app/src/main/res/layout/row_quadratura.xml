@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssRow"
+    android:weightSum="6.0">
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_quardatura_tv_tipo"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_quardatura_tv_messaggio"
+        style="@style/RowField.Descrizione"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_quardatura_tv_cid"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_quardatura_tv_dipendente"
+        style="@style/RowField.Descrizione"
+        android:layout_weight="1" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_quardatura_tv_data"
+        style="@style/RowField"
+        android:layout_weight="1" />
+
+</LinearLayout>

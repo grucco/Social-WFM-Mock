@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="0dp"
+    card_view:cardElevation="5dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:gravity="right|center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="@string/new_post_ora" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <com.mikepenz.materialdrawer.view.BezelImageView
+                android:id="@+id/avatar"
+                android:layout_width="52dp"
+                android:layout_height="52dp" />
+
+            <View
+                android:layout_width="16dp"
+                android:layout_height="match_parent" />
+
+            <org.fingerlinks.mobile.android.utils.widget.MyMultiAutoCompleteTextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="top"
+                android:inputType="textAutoComplete|textCapSentences|textMultiLine"
+                android:lines="5"
+                android:linksClickable="false"
+                android:textStyle="italic" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/searchBox"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/user_suggestion_row_height"
+            android:visibility="gone">
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/suggestionRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:id="@+id/emptySearchResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <com.mikepenz.iconics.view.IconicsTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="20dp"
+                    android:text="{gmd-perm-identity}"
+                    android:textSize="50sp" />
+
+                <TextView
+                    android:id="@+id/new_post_no_user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/new_post_nessun_utente_trovato"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </FrameLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:background="@color/secondary_text" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/social_add_mention_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp"
+                android:text="{gmi-account-add}"
+                android:textColor="@color/material_drawer_primary_icon"
+                android:textSize="30sp" />
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/social_add_tag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/social_add_mention_post"
+
+                android:paddingLeft="20dp"
+                android:paddingTop="11dp"
+                android:text="{faw-tag}"
+                android:textColor="@color/material_drawer_primary_icon"
+                android:textSize="24sp" />
+
+            <com.mikepenz.iconics.view.IconicsTextView
+                android:id="@+id/social_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:padding="8dp"
+                android:text="{faw-paper-plane}"
+                android:textColor="@color/material_drawer_primary_icon"
+                android:textSize="24sp"/>
+
+            <com.pnikosis.materialishprogress.ProgressWheel
+                android:id="@+id/progress"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical"
+                wheel:matProg_barColor="@color/accent"
+                wheel:matProg_progressIndeterminate="true" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

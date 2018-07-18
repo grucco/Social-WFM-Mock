@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--item
+        android:id="@+id/label_menu_chat"
+        android:title="@string/label_menu_chat"
+        android:icon="@drawable/ic_ab_chat"
+        android:orderInCategory="60"
+        app:showAsAction="always"/>
+
+    <item
+        android:id="@+id/menu_message"
+        android:title="@string/label_menu_settings"
+        android:icon="@drawable/ic_ab_message_inbox"
+        android:orderInCategory="70"
+        app:showAsAction="always" / -->
+
+    <item
+        android:id="@+id/menu_refresh_data"
+        android:icon="@android:drawable/stat_notify_sync"
+        android:orderInCategory="10"
+        android:title="Aggiorna"
+        app:showAsAction="always"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/menu_notify"
+        android:icon="@drawable/ic_ab_notification"
+        android:orderInCategory="80"
+        android:title="@string/label_menu_notify"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_ab_search"
+        android:menuCategory="system"
+        android:orderInCategory="90"
+        android:title="@string/label_menu_settings"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/ic_ab_settings"
+        android:orderInCategory="100"
+        android:title="@string/label_menu_settings"
+        app:showAsAction="always" />
+
+</menu>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssRow"
+    android:weightSum="1.0">
+
+    <TextView
+        style="@style/RowField.Descrizione.GravityLeft"
+        android:text="Medium Text"
+        android:id="@+id/row_monte_ore_descrizione_tv"
+        android:layout_weight="0.435" />
+
+    <TextView
+        style="@style/RowField"
+        android:text="Medium Text"
+        android:id="@+id/row_monte_row_inizio_riduzione_tv"
+        android:layout_weight="0.162" />
+
+    <TextView
+        style="@style/RowField"
+        android:text="Medium Text"
+        android:id="@+id/row_monte_ore_fine_riduzione_tv"
+        android:layout_weight="0.162" />
+
+    <TextView
+        style="@style/RowField"
+        android:text="Medium Text"
+        android:id="@+id/row_monte_ore_pianificato_tv"
+        android:layout_weight="0.125" />
+
+    <TextView
+        android:text="Medium Text"
+        android:id="@+id/row_monte_ore_goduto_tv"
+        style="@style/RowField"
+        android:layout_weight="0.125" />
+
+</LinearLayout>

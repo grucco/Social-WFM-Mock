@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:clickable="true">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/placeholder"
+        android:layout_width="914dp"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        android:baselineAligned="false">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2.5"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="140dp"
+                android:background="@color/primary">
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/background" />
+
+                <View
+                    android:background="@drawable/gradient_general_bg"
+                    android:layout_alignParentBottom="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp" />
+
+                <ImageView
+                    android:id="@+id/lock"
+                    android:background="@drawable/bckgrnd_lock"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="30dp"
+                    android:paddingLeft="30dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/ic_locked_group" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/follow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="?attr/selectableItemBackgroundBorderless"
+                        android:padding="16dp"
+                        android:src="@drawable/ic_unpreferred_profile" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical|right"
+                        android:maxLines="1"
+                        android:paddingRight="16dp"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_size_24_sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <org.fingerlinks.mobile.android.utils.widget.SlidingTabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#789ec4"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp" />
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/pager"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:background="#ccffffff" />
+
+        </LinearLayout>
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="#ccffffff">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/list_post"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/include_loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <tr.xip.errorview.ErrorView xmlns:errorview="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/error"
+        android:layout_width="match_parent"
+        android:background="#eeeeee"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        errorview:ev_retryButtonText="@string/retry"
+        errorview:ev_subtitle="@string/error_message_network" />
+
+
+</RelativeLayout>

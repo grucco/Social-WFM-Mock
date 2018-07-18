@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/EssContainer"
+    android:paddingRight="0dp"
+    android:paddingLeft="0dp"
+    android:paddingTop="0dp">
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        style="@style/FragmentHeader"
+        android:paddingLeft="0dp"
+        android:paddingRight="0dp"
+        android:weightSum="1.0">
+
+        <TextView
+            android:id="@+id/timbrature_lista_date_select"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_data_placeholder_weight"
+            android:drawableRight="@drawable/ic_date_picker" />
+
+        <TextView
+            android:id="@+id/trimbrature_lista_data_label"
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_data_weight"
+            android:text="@string/data" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_pianificato_weight"
+            android:text="@string/pianificato" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_ora_weight"
+            android:text="@string/ora" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_appunto_weight"
+            android:text="@string/appunto" />
+
+        <TextView
+            style="@style/FragmentHeaderField"
+            android:layout_weight="@dimen/timbrature_col_stato_weight"
+            android:text="@string/stato" />
+
+        <LinearLayout
+            style="@style/FragmentHeaderField"
+            android:layout_gravity="center"
+            android:layout_weight="@dimen/timbrature_col_action_weight">
+
+            <!--android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:id="@+id/timbrature_add"
+                android:background="?attr/selectableItemBackgroundBorderless">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp"
+                    android:src="@drawable/ic_add" />
+            </android.support.v7.widget.CardView-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/linearLayout3">
+
+        <include
+            layout="@layout/empty_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <android.support.v4.widget.SwipeRefreshLayout
+            android:id="@+id/refresh_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <org.fingerlinks.mobile.android.utils.widget.EmptyRecyclerView
+                android:id="@+id/timbrature_rv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:alpha="@dimen/fragment_alpha"
+                android:background="@color/list_background"
+                android:scrollbars="vertical" />
+        </android.support.v4.widget.SwipeRefreshLayout>
+
+
+    </FrameLayout>
+
+    <include layout="@layout/error_view" />
+</RelativeLayout>
