@@ -1,7 +1,7 @@
 # Social WFM mock
 
-# Prefazione
-Questo documento vuole essere una rapida guida per lo sviluppatore che dovrà iniziare a lavorare sul Social WFM. Tutte le informazioni funzionali e i dettagli architetturali dei sistemi coinvolti sono ampiamente descritti nella documentazione di progetto (BBP, documenti di architettura, manuali utente, documentazione dei servizi, documenti di cutover ecc..)
+# Descrizione dell'applicazione
+Questo documento vuole essere una rapida guida per lo sviluppatore che dovrà iniziare a lavorare sul Social WFM. L'applicazione descritta brevemente rappresenta la versione mockata del Social WFM di ACEA. Di seguito una breve descrizione dei componenti fondamentali dell'applicazione.
 
 # Rete e servizi
 L'applicazione si interfaccia in Http con i seguenti sistemi:
@@ -59,5 +59,9 @@ Le activities principali al suo interno sono:
 *  **SearchActivity.java:** Implementa la ricerca nel social network
 *  **ConcorsiActivity.java:** Mostra una webview che permette all'utente di partecipare ad un concorso
 *  **SurveyActivity.java:** Mostra una webview che permette all'utente di partecipare ad una survey
+
+# Descrizione delle modifiche
+Le classi ed i file modificati, nonchè la descrizione delle modifiche effettuate per realizzare il mock di tale applicazione, sono esposte nel documento "Mock Social WFM"
+
 
 
